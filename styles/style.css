@@ -41,3 +41,7 @@ header, footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: cadetblue;
 }
+
+h1, h2, h3 {
+    text-align: center;    
+}
