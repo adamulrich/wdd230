@@ -1,10 +1,21 @@
-.header {
+header {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     font-family: 'Lato', sans-serif;
     background-color: cadetblue;
+}
+
+
+header img {
+    max-width: 30%;
+    margin: 1em;
+}
+
+footer img {
+    max-width: 25%;
+    margin: .5em;
 }
 
 
