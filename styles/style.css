@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lato', sans-serif;
     background-color: cadetblue;
 }
 
@@ -22,7 +22,7 @@ main {
     justify-content: center;
     width: 100%;
     text-align:justify;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lato', sans-serif;
  }
 body {
     margin: 0 auto;
@@ -37,7 +37,10 @@ header, footer {
     justify-content: center;
     width: 100%;
     text-align: justify;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lato', sans-serif;
     background-color: cadetblue;
+}
+
+h1, h2, h3 {
+    text-align: center;    
 }
