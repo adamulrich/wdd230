@@ -1,5 +1,3 @@
-function setDateValues() {
-    date = new Date().getFullYear();
-    document.querySelector("#year").innerHTML = date
-    document.querySelector("#timestamp").innerHTML= document.lastModified;
-}
+date = new Date().getFullYear();
+document.querySelector("#year").innerHTML = date
+document.querySelector("#timestamp").innerHTML= document.lastModified;

@@ -5,16 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="This is the assignment portal page for Adam Ulrich for WDD230, Fall 2022.">
-    <link type="text/css" rel="stylesheet" href="styles//style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="scripts/script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Lato&display=swap" rel="stylesheet">
   <title>Adam Ulrich's WDD230 assignment portal.</title>
 
 </head>
-<body onload="setDateValues()">
+<body>
     <header>
         <img alt="Ulrich Family" src = "images/adam.jpg">
         <h1>Adam M Ulrich</h1>
@@ -35,13 +34,14 @@
         </ul>
     </main>
     <footer>
-        <div>
+        <div class="small_image">
             <img src="images/AdamU.png">
         </div>
         <div>
-            <p>© <var id="year"></var>, Adam Ulrich | Auburn, WA</p>
-            <p>Last Updated: <var id="timestamp"></var></p>
+            <p>© <text id="year"></text>, Adam Ulrich | Auburn, WA</p>
+            <p>Last Updated: <text id="timestamp"></text></p>
         </div>
+        <script src="scripts/script.js"></script>
     </footer>
 
 </body>
