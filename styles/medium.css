@@ -7,10 +7,6 @@ header, footer {
     background-color: cadetblue;
 }
 
-h1 {
-    margin: 15px;
-}
-
 header img {
     max-width: 400px;
     margin: 1em;
@@ -18,20 +14,16 @@ header img {
 
 footer img {
     max-width: 100px;
-    margin-right: 100px;
+    margin-right: 10px;
 }
 
 header img {
     max-width: 50%;
 }
 
-.title {
+#title {
     max-width: 30%;
-    margin: 5px;
-    
 }
-
-
 .home {
     background-color: cadetblue;   
 }
@@ -40,13 +32,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align:justify;
+    text-align:left;
     font-family: 'Lato', sans-serif;
  }
- main h1 {
-     max-width: 60%;
- }
-body {
+ body {
     margin: 0 auto;
     padding: 1em;
     font-size: 18px;
