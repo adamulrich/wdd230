@@ -1,0 +1,10 @@
+@media screen and (min-width: 800px) {
+
+    main {
+        grid-template-columns: auto auto auto;
+    }
+    .card:nth-child(3n) {
+        grid-column:span 1;
+    }
+
+}
