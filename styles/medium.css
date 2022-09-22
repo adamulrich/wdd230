@@ -1,7 +1,8 @@
 header, footer {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
+    align-content: center;
     width: 100%;
     font-family: 'Lato', sans-serif;
     background-color: cadetblue;
@@ -29,10 +30,11 @@ header img {
 }
 
 main {
-    display: flex;
+    display: grid;
     align-items: center;
+    align-content: center;
     justify-content: center;
-    text-align:left;
+    text-align: center;
     font-family: 'Lato', sans-serif;
  }
  body {
