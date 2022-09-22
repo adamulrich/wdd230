@@ -19,11 +19,11 @@ footer img {
 }
 
 header img {
-    max-width: 50%;
+    max-width: 85%;
 }
 
 #title {
-    max-width: 30%;
+    max-width: 100%;
 }
 .home {
     background-color: cadetblue;   
@@ -34,17 +34,33 @@ main {
     align-items: center;
     align-content: center;
     justify-content: center;
-    text-align: center;
     font-family: 'Lato', sans-serif;
  }
  body {
-    margin: 0 auto;
+    justify-content: center;
     padding: 1em;
     font-size: 18px;
-    text-align: center;
   }
 
+.center {
+    align-items: center;
+    text-align: center;
+}
 
-h1, h2, h3 {
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+
+h1, h2 {
     text-align: center;    
 }
+
+header, main {
+    grid-template-columns: 100%;
+
+}
+
+
+
