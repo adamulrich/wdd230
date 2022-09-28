@@ -42,7 +42,7 @@ main {
   }
 
 .center {
-    display: grid; 
+    display: grid;  
     place-items: center;
     align-items: center;
     text-align: center;
