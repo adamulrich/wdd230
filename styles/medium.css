@@ -1,4 +1,4 @@
-header, footer {
+header {
     display: grid;
     align-items: center;
     justify-content: center;
@@ -6,8 +6,26 @@ header, footer {
     width: 100%;
     font-family: 'Lato', sans-serif;
     background-color: cadetblue;
+    grid-template-columns: 1fr 1fr;
 }
 
+footer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    background-color: cadetblue;
+    grid-template-columns: 100%;
+}
+
+h1 {
+    display: inline;
+    grid-column: 2;
+    ;
+
+}
 header img {
     max-width: 400px;
     margin: 1em;
@@ -20,7 +38,7 @@ footer img {
 header img {
     width: auto;
     height: auto;
-    max-width: 85%;
+    max-width: 50%;
 }
 
 .home {
@@ -34,6 +52,7 @@ main {
     place-items: center;
     justify-content: center;
     font-family: 'Lato', sans-serif;
+    grid-template-columns: 100%;
  }
  body {
     justify-content: center;
@@ -54,14 +73,12 @@ ul {
 }
 
 
-h1, h2 {
+
+h2 {
     text-align: center;    
 }
 
-header, main {
-    grid-template-columns: 100%;
 
-}
 
 
 
