@@ -42,7 +42,48 @@ header {
   header > h1, header > h2 {
     color: var(--headline-color-on-color);
   }
+
+  nav {
+    background-color: #36454f;
+    margin: 0 auto;
+    max-width: 780px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+  }
+  nav ul {
+    list-style-type: none;
+    overflow: hidden;
+  }
+  nav ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+    background: linear-gradient(90deg, transparent, var(--accent1-color), transparent) bottom /
+      var(--d, 0) 3px no-repeat;
+    transition: 0.5s;
+  }
   
+  .active {
+    color: var(--accent3-color)
+  }
+  
+  nav ul {
+		display: grid;
+/* 		grid-template-columns: repeat(5, 1fr); */
+		grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+	} 
+
+	nav a {
+		font-size: 1rem;
+	}
+
+	nav a:hover {
+		/* 	background-color: #bbb;
+	color: #36454f; */
+		--d: 75%;
+	}
 
 body {
   max-width: 1200px;
@@ -86,10 +127,6 @@ ul {
     margin-top: 30px;
     text-align: center;
   }
-  
-li {
-
-}
   
 .colors {
   width: 100%;
