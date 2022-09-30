@@ -3,11 +3,11 @@
     main {
         grid-template-columns: auto auto auto;
     }
-    .card:nth-child(3n) {
+    /* .card:nth-child(3n) {
         grid-column:span 1;
         margin-left: 0px;
         margin-right: 0px;
 
-    }
+    } */
 
 }

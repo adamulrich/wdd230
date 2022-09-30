@@ -57,7 +57,7 @@ main a {
 
 main img {
     display: block;
-    width: 83%;
+    width: 70%;
     height: auto;
     max-width: 400px;
     max-height: 860px;
@@ -70,6 +70,7 @@ p {
     text-align: left;
     margin: 30px;
     margin-bottom: 40px;
+    line-height: 1.4;
 }
 code {
     font-family: 'Lato', sans-serif;

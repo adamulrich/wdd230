@@ -55,7 +55,7 @@ main {
     place-items: center;
     justify-content: center;
     font-family: 'Lato', sans-serif;
-    grid-template-columns: 100%;
+    
  }
  body {
     justify-content: center;
