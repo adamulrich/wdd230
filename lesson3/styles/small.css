@@ -57,7 +57,7 @@ header {
   
   nav ul {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
         list-style-type: none;
         list-style-position: outside;
         overflow: hidden;
