@@ -65,7 +65,7 @@ header {
 
   nav ul li a {
     display: block;
-    color: nav(--nav-link-color);
+    color: var(--nav-link-color);
     text-align: center;
     padding: 0.75rem;
     text-decoration: none;
