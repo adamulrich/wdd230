@@ -34,7 +34,8 @@ Fonts are separated by a | */
 
 html,body {
     min-width: 350px;
-    width: 83%;
+    width: 98%;
+    align-self: center;
 }
 
 header {
@@ -60,7 +61,7 @@ header {
         list-style-type: none;
         list-style-position: outside;
         overflow: hidden;
-        margin-left: -40px;
+        margin-left: -30px;
 	} 
 
   nav ul li a {
@@ -90,7 +91,7 @@ header {
 body {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4em;
+  padding: 0.5em;
   font-size: 18px;
   text-align: left;
 }
