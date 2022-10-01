@@ -32,6 +32,10 @@ Fonts are separated by a | */
   --nav-hover-background-color: #A68A64;
 }
 
+html,body {
+    min-width: 350px;
+    width = 100%;
+}
 
 header {
     padding: 1em;
@@ -44,23 +48,29 @@ header {
   }
 
   nav {
-    background-color: #36454f;
+    background-color: var(--nav-background-color);
     margin: 0 auto;
-    max-width: 780px;
+    /* max-width: 780px; */
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
   }
+  
   nav ul {
-    list-style-type: none;
-    overflow: hidden;
-  }
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        list-style-type: none;
+        list-style-position: outside;
+        overflow: hidden;
+        margin-left: -40px;
+	} 
+
   nav ul li a {
     display: block;
-    color: #fff;
+    color: nav(--nav-link-color);
     text-align: center;
     padding: 0.75rem;
     text-decoration: none;
     font-size: 0.95rem;
-    background: linear-gradient(90deg, transparent, var(--accent1-color), transparent) bottom /
+    background: linear-gradient(90deg, transparent, var(--nav-hover-link-color), transparent) bottom /
       var(--d, 0) 3px no-repeat;
     transition: 0.5s;
   }
@@ -68,20 +78,12 @@ header {
   .active {
     color: var(--accent3-color)
   }
-  
-  nav ul {
-		display: grid;
-/* 		grid-template-columns: repeat(5, 1fr); */
-		grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-	} 
 
 	nav a {
 		font-size: 1rem;
 	}
 
 	nav a:hover {
-		/* 	background-color: #bbb;
-	color: #36454f; */
 		--d: 75%;
 	}
 
@@ -120,9 +122,10 @@ p {
   text-align: center;
 }
 
-ul {
+main ul {
     margin: 0 auto;
     list-style: none;
+    line-height: 2.5;
     padding: 0;
     margin-top: 30px;
     text-align: center;
