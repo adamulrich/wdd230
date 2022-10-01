@@ -34,7 +34,7 @@ Fonts are separated by a | */
 
 html,body {
     min-width: 350px;
-    width = 100%;
+    width: 83%;
 }
 
 header {
