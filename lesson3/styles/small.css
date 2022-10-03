@@ -55,16 +55,18 @@ header {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
   }
   
-  nav ul {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        list-style-type: none;
-        list-style-position: outside;
-        overflow: hidden;
-        margin-left: -30px;
+  header nav ul {
+		/* display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); */
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      list-style-position: outside;
+      overflow: hidden;
+      margin-left: -30px;
 	} 
 
-  nav ul li a {
+  header nav ul li a {
     display: block;
     color: var(--nav-link-color);
     text-align: center;
@@ -85,7 +87,9 @@ header {
 	}
 
 	nav a:hover {
-		--d: 75%;
+		background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+    
 	}
 
 body {
