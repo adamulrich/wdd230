@@ -56,23 +56,19 @@ header {
   }
   
   header nav ul {
-		/* display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); */
       display: flex;
       flex-direction: column;
       list-style-type: none;
-      list-style-position: outside;
-      overflow: hidden;
-      margin-left: -30px;
+      margin-left: -40px;
 	} 
 
   header nav ul li a {
     display: block;
     color: var(--nav-link-color);
     text-align: center;
-    padding: 0.75rem;
+    padding: 0.75em;
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 1.1em;
     background: linear-gradient(90deg, transparent, var(--nav-hover-link-color), transparent) bottom /
       var(--d, 0) 3px no-repeat;
     transition: 0.5s;
@@ -81,10 +77,6 @@ header {
   .active {
     color: var(--accent3-color)
   }
-
-	nav a {
-		font-size: 1rem;
-	}
 
 	nav a:hover {
 		background-color: var(--nav-hover-background-color);
@@ -135,7 +127,7 @@ main ul {
     margin-top: 30px;
     text-align: center;
   }
-  
+
 .colors {
   width: 100%;
   min-width: 350px;
