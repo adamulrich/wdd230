@@ -33,10 +33,13 @@ html,body {
 }
 
 header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 1em;
     text-align: center;
     color: var(--paragraph-color-on-color);
     background-color: var(--paragraph-background-color);
+
   }
   header > h1, header > h2 {
     color: var(--headline-color-on-color);
@@ -47,7 +50,15 @@ header {
     margin: 0 auto;
     /* max-width: 780px; */
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    grid: 2/3;
+    grid-column: 1/3;
+
   }
+
+ #date {
+    grid-row:4/5;
+    grid-column: 2/3;
+    }
   
   header nav ul {
       display: flex;

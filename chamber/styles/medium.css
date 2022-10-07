@@ -1,0 +1,42 @@
+
+@media only screen and (min-width: 748px)
+{
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    span#subtitle {
+        font-size: 0.5em;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    header nav ul li {
+        width: 100%;
+    }
+
+    #spotlight {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #join {
+        display: block;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    main .section:nth-child(1) { order: 1; }
+    main .section:nth-child(2) { order: 5; width: 60%;}
+    main .section:nth-child(3) { order: 6; width: 30%;}
+    main .section:nth-child(4) { order: 4; }
+    main .section:nth-child(5) { order: 2; }
+    main .spotlight_container:nth-child(6) { order: 3; }
+
+
+
+}
