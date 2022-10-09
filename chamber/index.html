@@ -21,30 +21,33 @@
 
 <body>
     <header>
-        <img id="logo" src="images/briar_glen_logo3.png" alt="Briar Glen logo" width="540" height="640">
-            <h1>Briar Glen <br>
-            <span id="subtitle">Chamber of Commerce</span>
+        <section id="top_header">
+            <img class="header_order" id="logo" src="images/briar_glen_logo3.png" alt="Briar Glen logo" width="540" height="640">
+            <h1 class="header_order"><span class="first_line">Briar Glen</span><span id="subtitle">Chamber of Commerce</span>
             </h1>
-        <a href="https://www.facebook.com" ><img class="social" src="images/facebook.png" alt="Facebook"></a>
-        <a href="https://www.twitter.com" ><img class="social" src="images/twitter.png" alt="Twitter"></a>
+            <section class="header_order" id="social">
+                <a href="https://www.facebook.com" ><img class="social" src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com" ><img class="social" src="images/twitter.png" alt="Twitter"></a>
+            </section>
+            <button class="header_order" id="ham_btn"><span>&#9776;</span><span>X</span></button>
+            <p class="header_order" id="date"></p>
+            <nav class="header_order" >
+                <ul id="main_nav">
+                    <li><a href="#" class="internal">Discover</a></li>
+                    <li><a href="#" class="internal">Directory</a></li>
+                    <li><a href="#" class="internal">Join</a></li>
+                    <li><a href="#" class="internal">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
         
-        <nav>
-            <button id="hamBtn"><span>&#9776;</span><span>X</span></button>
-            <ul id="mainNav">
-                <li><a href="#" class="internal">About</a></li>
-                <li><a href="#" class="internal">Contact</a></li>
-                <li><a href="#" class="internal">Schedule</a></li>
-                <li><a href="#" class="internal">FAQ</a></li>
-            </ul>
-        </nav>
-        <!-- <p id="date"></p> -->
     </header>
     <main>
-        <div class="section" id="hero">Hero with site name and call to action</div>
-        <div class="section" id="event">Event</div>
-        <div class="section" id="weather">Weather</div>
-        <div class="section" id="join">Join</div>
-        <div class="section" id="news_release">News Release</div>
+        <div class="main_section" id="hero">Hero with site name and call to action</div>
+        <div class="main_section" id="event">Event</div>
+        <div class="main_section" id="weather">Weather</div>
+        <div class="main_section" id="join">Join</div>
+        <div class="main_section" id="news_release">News Release</div>
         <div class="spotlight_container" id="spotlight">
             <div class="spotlight_section" id="spotlight_1">Spotlight 1</div>
             <div class="spotlight_section" id="spotlight_2">Spotlight 2</div>
@@ -52,22 +55,41 @@
         </div>
     </main>
     <footer>
-        <img id="logo" src="images/briar_glen_logo3.png" alt="Briar Glen logo" width="540" height="640">
-        <p><span id="footer_header">Briar Glen Chamber of Commerce</span><br>
-        1 Main St<br>
-        Briar Glen, WA 98001</p> 
-        <p>info@briarglenchamber.org</p>
-        <p>(253)555-1212</p>
-        <a id="map_link" href="http://mags.google.com"><span class="material-symbols-outlined">
-            push_pin
-            </span>Find us!</a>
-            <br>
-            <hr>
-            <br>
-            <p>© <span id="year"></span> Briar Glen Chamber
-                <br><b>Adam Ulrich</b> <br> WDD230 Project<br>
-                Last Updated: <span id="timestamp"></span></p>
-     
+        <section id="footer_address">
+            <img id="logo" src="images/briar_glen_logo3.png" alt="Briar Glen logo" width="540" height="640">
+            <section id="address">
+                <h2><span class="first_line">Briar Glen</span>
+                    <span id="subtitle">Chamber of Commerce</span>
+                </h2>
+                <p>1 Main St<br>
+                Briar Glen, WA 98001</p> 
+            </section>
+        </section>
+        <section id="footer_contact_info">
+            <p>info@briarglenchamber.org</p>
+            <p>(253)555-1212</p>
+            <a id="map_link" href="http://mags.google.com"><span class="material-symbols-outlined">
+                push_pin
+                </span>Find us!</a>
+        </section>
+        <hr>
+        <br>
+        <section id="footer_footer">
+            <section id="footer_footer_top_row">
+                <p>© <span id="year"></span> Briar Glen Chamber</p>
+                <p id="vertical_bar">|</p>
+                <p><b>Adam Ulrich</b>
+                <p id="vertical_bar">|</p>
+                <p>WDD230 Project</p>
+                <p id="vertical_bar">|</p>
+            </section>
+            <section id="footer_footer_bottom_row">
+
+            <p>
+                Last Updated: <span id="timestamp"></span>
+            </p>
+            </section>
+        </section>
         
 
     </footer>
