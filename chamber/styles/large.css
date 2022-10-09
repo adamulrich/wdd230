@@ -1,121 +1,128 @@
-@media only screen and (min-width: 1200px)
-{
-    header nav ul li {
-        width: 100%;
-    }
+@media only screen and (min-width: 1200px) {
+  header nav ul li {
+    width: 100%;
+  }
 
-    nav {
-        
-    }
+  nav {
+  }
 
-    #main_nav {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-    }
+  #main_nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+  }
 
-    header {
-        padding-top: 20px;
-    }
-    header section#top_header h1 {
-        width: 25%;
-    }
+  header {
+    padding-top: 20px;
+  }
+  header div#top_header h1 {
+    width: 25%;
+  }
 
-    header section#top_header section#social {
-        width: 10%;
-    }
+  header div#top_header div#social {
+    width: 10%;
+  }
 
-    .header_order{
-        width: 50%;
-    }
+  .header_order {
+    width: 50%;
+  }
 
-    header section#top_header {
-        flex-direction: row;
-        flex-wrap: wrap;
-    
-    }
+  header div#top_header {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    section button#ham_btn {
-        display: none;
-    }
+  div button#ham_btn {
+    display: none;
+  }
 
-    section#top_header .header_order:nth-child(1) {order: 1}
-    section#top_header .header_order:nth-child(2) {order: 2}
-    section#top_header .header_order:nth-child(3) {order: 4}
-    section#top_header .header_order:nth-child(4) {order: 5}
-    section#top_header .header_order:nth-child(5) {order: 6}
-    section#top_header .header_order:nth-child(6) {order: 3}
+  div#top_header .header_order:nth-child(1) {
+    order: 1;
+  }
+  div#top_header .header_order:nth-child(2) {
+    order: 2;
+  }
+  div#top_header .header_order:nth-child(3) {
+    order: 4;
+  }
+  div#top_header .header_order:nth-child(4) {
+    order: 5;
+  }
+  div#top_header .header_order:nth-child(5) {
+    order: 6;
+  }
+  div#top_header .header_order:nth-child(6) {
+    order: 3;
+  }
 
-
-    footer section#address {
+  footer div#address {
     width: auto;
-    }
+  }
 
-    section#footer_footer_top_row {
+  div#footer_footer_top_row {
     width: auto;
+  }
 
-    }
-
-    section#footer_footer_bottom_row {
+  div#footer_footer_bottom_row {
     width: auto;
-    }
+  }
 
-    footer section#footer_footer {
-        flex-wrap: nowrap;
-        justify-content: center
-        
-    }
+  footer div#footer_footer {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 
+  main {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 740px;
+    align-content: space-evenly;
+    padding: 0;
+  }
 
-    main {
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 740px;
-        align-content: space-evenly;
-        padding: 0;
-    }
+  main .main_div:nth-child(1) {
+    order: 4;
+    width: 600px;
+    height: 450px;
+  }
 
-    main .main_section:nth-child(1) { 
-        order: 4; 
-        width: 600px;
-        height: 450px;}
+  main .main_div:nth-child(2) {
+    order: 1;
+    width: 200px;
+  }
 
-    main .main_section:nth-child(2) { 
-        order: 1; 
-        width: 200px; 
-    }
+  main .main_div:nth-child(3) {
+    order: 2;
+    width: 200px;
+  }
 
-    main .main_section:nth-child(3) { 
-        order: 2; 
-        width: 200px;
-    }
+  main .main_div:nth-child(4) {
+    order: 3;
+    width: 200px;
+  }
+  main .main_div:nth-child(5) {
+    order: 5;
+    width: 600px;
+  }
+  main .spotlight_container:nth-child(6) {
+    order: 6;
+    width: 200px;
+  }
 
-    main .main_section:nth-child(4) { 
-        order: 3; 
-        width: 200px;}
-    main .main_section:nth-child(5) {
-        order: 5; 
-        width: 600px}
-    main .spotlight_container:nth-child(6) {
-        order: 6; 
-        width: 200px }
+  .spotlight_div {
+    height: auto;
+    margin-top: 0px;
+  }
 
-    .spotlight_section {
-        height: auto;
-        margin-top: 0px;
-    }
+  #spotlight_3 {
+    display: block;
+  }
 
-    #spotlight_3 {
-            display: block ;
-          }
-          
-    #spotlight {
-        display: grid;
-        grid-template-columns: 1fr;
-        height: 740px;
-          }
-
-        
+  #spotlight {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 740px;
+  }
 }

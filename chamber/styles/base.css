@@ -39,7 +39,7 @@ header {
   background-color: var(--paragraph-background-color);
 }
 
-section#top_header {
+div#top_header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -51,12 +51,12 @@ section#top_header {
   background-color: var(--paragraph-background-color);
 }
 
-header section img#logo {
+header div img#logo {
   width: 50px;
   height: auto;
 }
 
-header section section#social {
+header div div#social {
   display: flex;
   width: 20%;
   margin: 0px;
@@ -70,7 +70,7 @@ img.social {
   height: auto;
 }
 
-header section h1 {
+header div h1 {
   width: 45%;
 
   text-align: left;
@@ -98,7 +98,7 @@ span#subtitle {
   color: var(--accent3-color);
 }
 
-section#top_header button {
+div#top_header button {
   display: block;
   margin: 0.2rem 2vw;
   width: 5%;
@@ -151,7 +151,7 @@ nav {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
 }
 
-.main_section {
+.main_div {
   display: block;
   height: 200px;
   background-color: lightgray;
@@ -224,7 +224,7 @@ body {
   margin-top: 15px;
 }
 
-.spotlight_section {
+.spotlight_div {
   height: 200px;
   background-color: lightgray;
   outline: 2px solid black;
@@ -249,7 +249,7 @@ footer {
   justify-content: space-between;
 }
 
-footer section #logo {
+#footer_logo {
   width: 100px;
   height: auto;
   margin: 1em;
@@ -267,7 +267,7 @@ footer hr {
   border: 2px solid white;
 }
 
-footer section h2 {
+footer div h2 {
   width: 100%;
   text-align: center;
   letter-spacing: 7px;
@@ -277,11 +277,11 @@ footer section h2 {
   line-height: 0.5em;
 }
 
-p#vertical_bar {
+span.vertical_bar {
   display: none;
 }
 
-h2 span#subtitle {
+h2 span#footer_subtitle {
   text-align: center;
   font-size: 14px;
   line-height: 0.5em;
