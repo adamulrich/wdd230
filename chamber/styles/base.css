@@ -72,15 +72,13 @@ img.social {
 
 header div h1 {
   width: 45%;
-
   text-align: left;
   line-height: 0.6em;
   letter-spacing: 4px;
   font-size: 24px;
-
   color: var(--headline-color-on-color);
   margin: 10px;
-  margin-left: -40px;
+  margin-left: -0.5em;
 }
 
 span.first_line:after {
