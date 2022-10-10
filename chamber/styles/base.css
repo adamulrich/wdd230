@@ -129,7 +129,7 @@ p#date {
 }
 
 nav {
-  width: 92%;
+  width: 100%;
 }
 #main_nav {
   display: none;
@@ -140,12 +140,12 @@ nav {
   margin: 5px auto;
   background-color: var(--nav-background-color);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+  padding-inline-start: 0px;
 }
 
 #main_nav.open {
   display: flex;
   background-color: var(--nav-background-color);
-  margin: 5px auto;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
 }
 
@@ -182,7 +182,7 @@ header nav ul li a {
     )
     bottom / var(--d, 0) 3px no-repeat;
   transition: 0.5s;
-  margin-left: -40px;
+  margin-left: -15px;
 }
 
 .active {
