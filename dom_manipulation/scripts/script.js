@@ -16,7 +16,7 @@ function addChapter() {
 
         // create the delete button
         const deleteButton = document.createElement('button');
-        deleteButton.textContent = "❌";
+        deleteButton.innerHTML = "<span role='img' aria-label='Red X - Delete'>❌</span>";
 
         // append to list item
         listItem.appendChild(deleteButton);
