@@ -36,22 +36,22 @@
     display: none;
   }
 
-  div#top_header .header_order:nth-child(1) {
+  div#top_header .header_order#logo {
     order: 1;
   }
-  div#top_header .header_order:nth-child(2) {
+  div#top_header .header_order#header_first_line {
     order: 2;
   }
-  div#top_header .header_order:nth-child(3) {
+  div#top_header .header_order#social {
     order: 4;
   }
-  div#top_header .header_order:nth-child(4) {
+  div#top_header .header_order#ham_btn {
     order: 5;
   }
-  div#top_header .header_order:nth-child(5) {
+  div#top_header .header_order#date {
     order: 6;
   }
-  div#top_header .header_order:nth-child(6) {
+  div#top_header .header_order#navigation {
     order: 3;
   }
 
@@ -80,37 +80,38 @@
     padding: 0;
   }
 
-  main .main_div:nth-child(1) {
+  main .main_div#hero {
     order: 4;
     width: 48%;
     height: 450px;
   }
 
-  main .main_div:nth-child(2) {
+  main .main_div#event {
     order: 1;
     width: 19%;
   }
 
-  main .main_div:nth-child(3) {
+  main .main_div#weather {
     order: 2;
     width: 19%;
   }
 
-  main .main_div:nth-child(4) {
+  main .main_div#join {
     order: 3;
     width: 19%;
   }
-  main .main_div:nth-child(5) {
+  main .main_div#news_release {
     order: 5;
     width: 48%;
   }
-  main .spotlight_container:nth-child(6) {
+  main .spotlight_container#spotlight {
     order: 6;
-    width: 19%;
+    height: 93.1%;
+    width: 18%;
   }
 
   .spotlight_div {
-    height: auto;
+    width: auto;
     margin-top: 0px;
   }
 
@@ -119,8 +120,7 @@
   }
 
   #spotlight {
-    display: grid;
-    grid-template-columns: 1fr;
-    height: 740px;
+    display: flex;
+    flex-direction: column;
   }
 }
