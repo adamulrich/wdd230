@@ -14,7 +14,7 @@
   --heading-font: Dosis, sans-serif;
   --paragraph-font: Lato, Helvetica, sans-serif;
 
-  --headline-color-on-white: #396e94; /* headlines on a white background */
+  --headline-color-on-white: #816a54e5; /* headlines on a white background */
   --headline-color-on-color: white; /* headlines on a colored background */
   --paragraph-color-on-white: #396e94; /* paragraph text on a white background */
   --paragraph-color-on-color: #000000; /* paragraph text on a colored background */
@@ -218,21 +218,16 @@ body {
   grid-template-columns: 1fr;
 }
 
-.spotlight_container {
+div.spotlight_container {
   display: flex;
-  background-color: lightgray;
   outline: 2px solid black;
-  padding: 1em;
+  padding-top: 0;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 15px;
   margin-top: 15px;
 }
 
-.spotlight_div {
-  height: 200px;
-  background-color: lightgray;
-  outline: 2px solid black;
-  padding: 1em;
-  margin-top: 15px;
-}
 
 main {
   display: flex;
@@ -308,4 +303,98 @@ div#footer_address {
   margin-bottom: 20px;
 }
 
-#footer_logo
+main div h3, main div div h3 {
+  font-size: large;
+  color: var(--headline-color-on-white);
+  text-align: center;
+  margin: 5px;
+}
+
+main div h2 {
+  font-size: x-large;
+  color: var(--accent2-color);
+  text-align: center;
+}
+
+.main_div, .spotlight_div, .spotlight_container {
+  background-color: var(--nav-background-color);
+  align-items: center;
+  text-align: center;
+}
+
+div.spotlight_div {
+  border:5px solid rgba(0, 0, 0, 0.3);
+  height: 200px;
+  width: 100%;
+  padding: 0;
+  margin-top: 15px;
+  
+}
+span.spotlight_icon {
+  font-size: 60px;
+  margin: 0px;
+}
+
+main p {font-size: medium;
+text-align: center;
+margin: 5px;
+}
+
+main a {font-size: small;
+  text-align: center;
+  margin: 2px;
+  }
+
+div.main_div p {
+
+  font-size: medium;
+}
+
+div#hero {
+  background: url('../images/briar_glen_photo_2.jpg') no-repeat;
+    background-position-y: 10%;
+    background-size: 160%;
+}
+
+div#hero h2 {
+  text-align: left;
+}
+
+main div h4 {
+  color: var(--nav-hover-background-color);
+}
+
+div.contrast_heading, div.hero_contrast_heading {
+  margin-top: 10px;
+}
+div.contrast_heading a, div.hero_contrast_heading a {
+  
+  background-color: var(--paragraph-background-color);
+  color: var(--headline-color-on-color);
+  border-radius: 1em;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  font-size: larger;
+  padding-inline-start: 2em;
+  padding-inline-end: 2em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+div#join p {
+  margin-top: 20px;
+}
+
+div#join a {
+  margin-top: 50px;
+}
+
+div#hero {
+  position: relative;
+}
+
+div.hero_contrast_heading {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+

@@ -26,8 +26,8 @@
   }
 
   #spotlight {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+
   }
 
   main {
@@ -138,4 +138,15 @@
   div#footer_footer_bottom_row {
     width: 100%;
   }
+
+  div#hero {
+    background-size: 210%;
+    background-position-y: -300px;
+  }
+
+  div.spotlight_container {
+    padding-left: 10px;
+  }
+ 
 }
+

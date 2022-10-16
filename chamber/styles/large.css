@@ -106,8 +106,10 @@
   }
   main .spotlight_container#spotlight {
     order: 6;
-    height: 93.1%;
+    height: 100%;
     width: 18%;
+    padding-top: 15px;
+    padding-left: 15px;
   }
 
   .spotlight_div {
@@ -122,5 +124,17 @@
   #spotlight {
     display: flex;
     flex-direction: column;
+  }
+
+  main p {font-size: 12px;
+  }
+
+  div#hero {
+      background-size: 210%;
+      background-position-y: 0;
+  }
+
+  div.spotlight_container {
+ 
   }
 }
