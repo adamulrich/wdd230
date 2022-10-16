@@ -9,18 +9,19 @@
   --secondary-color: #a68a64;
   --accent1-color: #a4ac86;
   --accent2-color: #656d4a;
-  --accent3-color: #7f4f24;
+  --accent3-color: #442811;
+  --accent4-color: #85430d;
 
   --heading-font: Dosis, sans-serif;
   --paragraph-font: Lato, Helvetica, sans-serif;
 
-  --headline-color-on-white: #816a54e5; /* headlines on a white background */
-  --headline-color-on-color: white; /* headlines on a colored background */
+  --headline-color-on-white: #5a4939e5; /* headlines on a white background */
+  --headline-color-on-color: rgb(0, 0, 0); /* headlines on a colored background */
   --paragraph-color-on-white: #396e94; /* paragraph text on a white background */
   --paragraph-color-on-color: #000000; /* paragraph text on a colored background */
-  --paragraph-background-color: #a4ac86;
+  --paragraph-background-color: #cbd3ad;
   --nav-link-color: #a68a64;
-  --nav-background-color: #c2c5aa;
+  --nav-background-color: #dfe4be;
   --nav-hover-link-color: #333d29;
   --nav-hover-background-color: #a68a64;
 }
@@ -156,7 +157,6 @@ nav {
 
 .main_div {
   height: 200px;
-  background-color: lightgray;
   outline: 2px solid black;
   padding: 0.75em;
   margin-top: 15px;
@@ -363,7 +363,7 @@ div#hero {
 
 
 main div h4 {
-  color: var(--nav-hover-background-color);
+    color: var(--accent4-color);
 }
 
 div.contrast_heading, div.hero_contrast_heading {
