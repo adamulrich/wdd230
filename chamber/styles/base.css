@@ -312,8 +312,13 @@ main div h3, main div div h3 {
 
 main div h2 {
   font-size: x-large;
-  color: var(--accent2-color);
-  text-align: center;
+  color: var(--accent3-color);
+  text-align: left;
+  text-shadow: -1px 1px 0 white,
+				  1px 1px 0 white,
+				 1px -1px 0 white;
+
+
 }
 
 .main_div, .spotlight_div, .spotlight_container {
@@ -356,9 +361,6 @@ div#hero {
     background-size: 160%;
 }
 
-div#hero h2 {
-  text-align: left;
-}
 
 main div h4 {
   color: var(--nav-hover-background-color);
