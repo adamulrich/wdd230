@@ -83,7 +83,7 @@
   main .main_div#hero {
     order: 4;
     width: 48%;
-    height: 450px;
+    height: 455px;
   }
 
   main .main_div#event {
@@ -134,7 +134,9 @@
       background-position-y: 0;
   }
 
-  div.spotlight_container {
- 
+  main .main_div#event {
+    width: 19%;
+    margin-right: 0px
   }
-}
+
+  }

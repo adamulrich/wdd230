@@ -42,11 +42,17 @@
   }
   main .main_div#event {
     order: 5;
-    width: 60%;
+    width: 55%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+    margin-right: 15px;
   }
+
   main .main_div#weather {
     order: 6;
-    width: 30%;
+    width: 225px;
+    flex-wrap: nowrap;
   }
   main .main_div#join {
     order: 4;
