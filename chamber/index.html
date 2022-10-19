@@ -50,13 +50,24 @@
     </header>
     <main>
         <div class="main_div" id="hero">
-            <h2>Welcome to Briar Glen</h2>
+            <picture class="hero_image_container">
+                <source srcset="images/wdd230-org_1200.jpg" media="(min-width:748px) and (max-width:1199px)">
+                <source srcset="images/wdd230-org_800.jpg" media="(min-width:1200px)">
+                <img src="images/wdd230-org_799.jpg" id="hero_image" alt = 'hero image' width="799" height="532">
+            </picture>
+            <!-- <picture class="hero_image_container">
+                <source srcset="images/briar_glen_photo_2_800.webp" media="(min-width:748px) and (max-width:1199px)">
+                <source srcset="images/briar_glen_photo_2_1200.webp" media="(min-width:1200px)">
+                <img src="images/briar_glen_photo_2_800.webp" id="hero_image" alt = 'hero image' width="799" height="532">
+            </picture> -->
+
+            <h2 id="hero_banner">Welcome to Briar Glen</h2>
             <div class="hero_contrast_heading"><a href="#">Join Us!</a></div>
         </div>
         <div class="main_div" id="event">
             <h3>Ribbon Cutting</h3>
             <h4><span>💎</span>The Diamond Shack</h4>
-            <p>Join us for the grand opening of The Diamond Shack, Thursday
+            <p>Join us for the grand opening of The Diamond Shack, Thursday 
                 a 1:00pm.<a href = "#">more info ...</a>
             </p>
         </div>
@@ -120,7 +131,7 @@
             </div>
             <div class="spotlight_div" id="spotlight_3">
                 <h3>Build A Treefort</h3>
-                <img src="images/tree_house.png" alt="tree house" width="80" height="80">
+                <img src="images/tree_house_80.png" alt="tree house" width="80" height="80">
                 <p>Over 1000 plans!</p>
                 <hr>
                 <a href="mailto:builda@treefort.com">builda@treefort.com</a>
