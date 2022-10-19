@@ -17,6 +17,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Lato&display=swap" rel="stylesheet">
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
 
     <title>Briar Glen Chamber of Commerce</title>
 </head>
@@ -74,12 +75,12 @@
         <div class="main_div" id="weather">
             <h3>Weather</h3>
             <div class="side_by_side">
-                <span class="spotlight_icon">⛅</span>
-                <h4>78°F</h4>
+                <span class="spotlight_icon" id="weather_icon">⛅</span>
+                <h4><span id='temperature'>32</span>°F</h4>
             </div>
             <div id="weather_forecast">
                 <h4 class="align_right">
-                    Partly Cloudy
+                    <span id="forecast">Partly Cloudy</span>
                 </h4>
                 <hr>
             </div>
@@ -87,11 +88,11 @@
                 <table class="center">
                     <tr>
                         <td><p>Wind Speed:</p></td>
-                        <td><p>3 mph</p></td>
+                        <td><p><span id='wind_speed'>20</span> mph</p></td>
                     </tr>
                     <tr>
                         <td><p>Wind Chill:</p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><span id='wind_chill'>N/A</span></p></td>
                     </tr>
                 </table>
             </div>
