@@ -1,0 +1,24 @@
+{
+    "lang": "en",
+    "dir": "ltr",
+    "name": "Briar Glen Chamber of Commerce",
+    "short_name": "BG Chamber",
+    "icons": [{
+      "src": "images/briar_glen_logo_4_128.webp",
+      "sizes": "128x128",
+      "type": "image/webp",
+      "purpose": "maskable"
+    }, {
+      "src": "images/briar_glen_logo_4_512.webp",
+      "sizes": "512x512",
+      "purpose": "any"
+
+    }],
+    "scope": "/",
+    "id": "BGCOC",
+    "start_url": "/index.html",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "theme_color": "aliceblue",
+    "background_color": "red"
+  }
