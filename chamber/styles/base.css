@@ -431,7 +431,11 @@ div#weather_forecast {
   align-items: right;
   margin-left: auto;
   margin-right: auto;
+}
 
+
+#weather_icon {
+  color: white;
 }
 
 div#weather_forecast h4 {
