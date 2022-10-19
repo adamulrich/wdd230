@@ -356,9 +356,9 @@ div.main_div p {
 }
 
 div#hero {
-  background: url('../images/briar_glen_photo_2.jpg') no-repeat;
+    /* background: url('../images/briar_glen_photo_2.jpg') no-repeat;
     background-position-y: 10%;
-    background-size: 160%;
+    background-size: 160%; */
 }
 
 
@@ -392,6 +392,7 @@ div#join a {
 
 div#hero {
   position: relative;
+  padding: 0;
 }
 
 div.hero_contrast_heading {
@@ -399,6 +400,14 @@ div.hero_contrast_heading {
   bottom: 20px;
   right: 20px;
 }
+
+h2#hero_banner {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  margin: 0px;
+}
+
 
 div.side_by_side {
   display: flex;
@@ -432,4 +441,18 @@ div#weather_forecast h4 {
 div#weather {
   align-self: center;
   max-width: 230px;
+}
+
+img#hero_image, picture.hero_image_container {
+  width: auto;
+  height: 100%;
+ 
+}
+
+@supports(object-fit: cover){
+    img#hero_image {
+      width: 100%;
+      object-fit: cover;
+      object-position: 0% 30%;
+    }
 }
