@@ -6,16 +6,16 @@
       margin-left: -1em;
     }
 
-    span#subtitle {
+    .subtitle {
       font-size: 20px;
     }
 
-    header div#top_header p#date {
+    .date {
       width: 100%;
     }
 
     /* nav */
-    #main_nav li {
+    .main_nav li {
       width: 100%;
     }
 
@@ -27,11 +27,11 @@
     }
 
     /* reorder for medium view, adjust sizes, fix wrapping */
-    main .main_div#hero {
+    .hero {
       order: 1;
       width: 100%;
     }
-    main .main_div#event {
+    .event {
       order: 5;
       width: 55%;
       flex-grow: 1;
@@ -40,37 +40,36 @@
       margin-right: 15px;
     }
 
-    main .main_div#weather {
+    .weather {
       order: 6;
       flex-wrap: nowrap;
     }
-    main .main_div#join {
+    
+    .join {
       order: 4;
       width: 100%;
+      /* turn on the join div */
+      display: block;
     }
-    main .main_div#news_release {
+
+
+    .news_release {
       order: 2;
       width: 100%;
     }
-    main .spotlight_container#spotlight {
+
+    .spotlight_container {
       order: 3;
+      flex-direction: row;
       width: 100%;
       padding-left: 10px;
     }
 
-    /* turn on the join div */
-    #join {
-      display: block;
-    }
-
+    
     /* spotlight  */
     .spotlight_div {
       margin-right: 5px;
       margin-left: 5px;
-    }
-
-    #spotlight {
-      display: flex;
     }
 
     /* footer */
@@ -85,13 +84,13 @@
       width: 50%;
     }
 
-    footer div#footer_address {
+    .footer_address {
       align-self: center;
       display: flex;
       justify-content: center;
     }
 
-    footer div#address {
+    .address {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -99,7 +98,7 @@
       width: 100%;
     }
 
-    footer div#footer_footer {
+    .footer_footer {
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -115,40 +114,41 @@
       margin-top: 10px;
     }
 
-    footer div div h2 {
+    .footer_first_line {
       margin-block-start: 0;
       margin-block-end: 0;
       margin-top: 20px;
+      font-size: 40px;
     }
 
-    footer div div h2 span#footer_subtitle {
+    .footer_subtitle {
       width: 40%;
       text-align: center;
-      font-size: 16px;
-
+      font-size: 20px;
       margin-top: 0;
       margin-left: 0;
       letter-spacing: 3px;
       color: var(--accent3-color);
     }
 
-    footer div#footer_contact_info p {
+   .footer_contact_info p {
       height: 7px;
     }
 
-    span.vertical_bar {
+    .vertical_bar {
       display: inline;
     }
 
-    div#footer_footer_top_row {
+    .footer_footer_top_row {
       display: flex;
       flex-direction: row;
       justify-content: center;
       width: 100%;
       height: 1.3em;
+      
     }
 
-    div#footer_footer_bottom_row {
+    .footer_footer_bottom_row {
       width: 100%;
     }
 
