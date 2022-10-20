@@ -227,7 +227,7 @@ main {
   margin-top: 15px;
 }
 
-.news_release {
+.news_release, .join {
   display: flex;
   flex-direction: column;
   justify-content: space-around;

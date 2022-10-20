@@ -89,6 +89,9 @@
     }
 
     .join {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
       order: 3;
       width: 19%;
     }
@@ -135,7 +138,7 @@
       width: auto;
     }
 
-    footer div div h2 {
+    .footer_first_line {
       margin-block-start: 0;
       margin-block-end: 0;
       margin-top: 20px;
