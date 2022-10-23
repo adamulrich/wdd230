@@ -15,12 +15,12 @@ async function loadWeatherData () {
         const weatherData = await response.json();
     
         // current temp
-        const currentTemp = Math.round(weatherData.list[0].main.temp);
+        const currentTemp = Math.round(weatherData.list[0].main.temp * 10) / 10;
         document.getElementById('temperature').innerText = String(currentTemp)
 
         // wind speed
-        const currentWindSpeed = weatherData.list[0].wind.speed;
-        document.getElementById('wind_speed').innerText = String(currentTemp)
+        const currentWindSpeed = Math.round(weatherData.list[0].wind.speed * 10) / 10 ;
+        document.getElementById('wind_speed').innerText = String(currentWindSpeed)
 
         // description
         const currentDescription = weatherData.list[0].weather[0].description;
