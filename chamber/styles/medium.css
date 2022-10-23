@@ -146,4 +146,39 @@
   .footer-footer-bottom-row {
     width: 100%;
   }
+
+  .sxs-div {
+    flex-flow: row nowrap;
+  }
+  div.sxs-div h2 {
+    font-size: xx-large;
+  }
+
+  div.sxs-div p {
+    font-size: 18px;
+    margin: 20px;
+  }
+
+  .discover-div {
+    vertical-align: middle;
+  }
+  
+  .discover-img {
+    border: 4px solid #000;
+    width: 100%;
+    height: auto;
+  }
+
+  .discover-text-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: space-around;
+  }
+
+  img.discover-img:hover {
+    border-color: var(--image-hover-color);
+  }
+
 }

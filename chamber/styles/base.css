@@ -20,10 +20,13 @@
   --nav-background-color: #dfe4be;
   --nav-hover-link-color: #333d29;
   --nav-hover-background-color: #a68a64;
+  --image-hover-color: orange;
 
   /* hard coded values */
 
   --main-div-height: 200px;
+  --discover-div-height: 450px;
+  --discover-img-height: 300px;
 }
 
 /* banner */
@@ -340,8 +343,14 @@ div.hero-contrast-heading a {
   margin: 0;
 }
 
-.hero-image,
-picture.hero-image-container {
+.hero-image, 
+picture.hero-image-container
+{
+  width: auto;
+  height: 100%;
+}
+
+div.hero-image-container {
   width: auto;
   height: 100%;
 }
@@ -466,4 +475,48 @@ footer hr {
 
 .footer-address {
   margin-bottom: 20px;
+}
+
+.main-discover {
+  height: auto;
+}
+
+.sxs-div {
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  width: auto;  
+}
+
+.discover-text-content {
+  height: 100%;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.discover-text-content h2,
+.discover-text-content p {
+  text-align: center;
+}
+
+.discover-div {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.discover-img {
+  border: 4px solid #000;
+  width: 100%;
+  height: auto;
+}
+
+img[data-src] {
+  filter: blur(0.2em);
+}
+
+img {
+  filter: blur(0em);
+  transition: filter 1.0s;
 }
