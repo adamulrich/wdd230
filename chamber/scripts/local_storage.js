@@ -13,7 +13,7 @@ if (numVisits != undefined) {
     visitsDisplay.innerText = numVisits;
 
 } else {
-	visitsDisplay.textContent = `This is your first visit!`;
+	visitsDisplay.textContent = '0';
     localStorage["numVisits"] = 1;
 }
 
