@@ -37,7 +37,6 @@ function preloadImage(img) {
     }
 }
 
-
 const loadImage = image => {
     image.classList.add('fade-in');
     image.src = image.dataset.src;
