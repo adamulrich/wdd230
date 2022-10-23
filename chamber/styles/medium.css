@@ -150,6 +150,7 @@
   .sxs-div {
     flex-flow: row nowrap;
   }
+
   div.sxs-div h2 {
     font-size: xx-large;
   }
@@ -163,7 +164,7 @@
     vertical-align: middle;
     width: 98%;
   }
-  
+
   .discover-img {
     border: 4px solid #000;
     width: 100%;
@@ -173,12 +174,11 @@
   .discover-text-content {
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
     justify-content: space-around;
   }
 
   img.discover-img:hover {
     border-color: var(--image-hover-color);
   }
-
 }
