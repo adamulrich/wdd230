@@ -11,8 +11,10 @@ document.querySelector("#date").innerHTML = fullDate;
 let dow = date.getDay();
 if (dow == 1 | dow ==2) {
     let banner = document.getElementById("banner");
-    banner.style.display = "block";
-    banner.innerText = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+    if (banner != undefined) {
+        banner.style.display = "block";
+        banner.innerText = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+    }
 }
 
 // toggle hamburger button
