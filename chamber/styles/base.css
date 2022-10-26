@@ -260,7 +260,7 @@ main {
 .spotlight-container {
   display: flex;
   outline: 2px solid black;
-  padding: 0 15px 15px 15px;
+  padding: 0 15px 15px;
   margin-top: 15px;
   flex-direction: column;
 }
