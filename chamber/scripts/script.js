@@ -27,6 +27,23 @@ function toggleMenu() {
 document.getElementById("ham_btn").onclick = toggleMenu;
 
 
+// highlight current menu item
+const mainNav = document.getElementById("main_nav");
+const mainNavChildren = mainNav.children;
+
+for (let i = 0; i < mainNavChildren.length; i++) {
+    let URL = location.href.split("/").slice(-1)[0];
+    if (URL == "" | URL == "#") { 
+        URL = "index.html"
+    }
+    if (mainNavChildren[i].children[0].href.split("/").slice(-1)[0] == URL) {
+        mainNavChildren[i].children[0].classList.add('current-menu');
+    }
+
+}
+
+
+// lazy loading images
 const images = document.querySelectorAll("[data-src]");
 
 function preloadImage(img) {

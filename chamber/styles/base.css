@@ -4,7 +4,7 @@
   font-family: lato, sans-serif;
 
   --primary-color: #c2c5aa;
-  --secondary-color: #a68a64;
+  --secondary-color: #966111;
   --accent1-color: #a4ac86;
   --accent2-color: #656d4a;
   --accent3-color: #442811;
@@ -223,7 +223,13 @@ header nav ul li a {
 nav a:hover {
   background-color: var(--nav-hover-background-color);
   color: var(--nav-hover-link-color);
-  margin-left: -40px;
+  margin-left: 0;
+  width: 70%;
+}
+
+.current-menu {
+  color: #000;
+  background-color: var(--nav-link-color);
 }
 
 /* main  */
