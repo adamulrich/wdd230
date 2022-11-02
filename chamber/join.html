@@ -2,49 +2,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Briar Glen Chamber of Commerce">
-    <meta name="theme-color" content="brown">
-    <meta name="name" content="Briar Glen Chamber of Commerce">
-    <link rel="manifest" href="manifest.webmanifest">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Briar Glen Chamber of Commerce" />
+    <meta name="theme-color" content="brown" />
+    <meta name="name" content="Briar Glen Chamber of Commerce" />
+    <link rel="manifest" href="manifest.webmanifest" />
 
-    <meta name="application-name" content="BG Chamber">
-    <link rel="icon" sizes="128x128" href="images/briar_glen_logo_4_128.webp">
-    <link rel="icon" sizes="512x512" href="images/briar_glen_logo_4_512.webp">
-    <link rel="apple-touch-icon" href="images/briar_glen_logo_4_192.png">
+    <meta name="application-name" content="BG Chamber" />
+    <link rel="icon" sizes="128x128" href="images/briar_glen_logo_4_128.webp" />
+    <link rel="icon" sizes="512x512" href="images/briar_glen_logo_4_512.webp" />
+    <link rel="apple-touch-icon" href="images/briar_glen_logo_4_192.png" />
 
-    <link rel="shortcut icon" href="favicon.png">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script src="scripts/script.js" defer></script>
-    
 
     <title>Briar Glen Chamber of Commerce</title>
 </head>
 
 <body>
     <header>
-
         <div class="top-header">
             <img class="header-order logo" src="images/briar_glen_logo_4.webp" alt="Briar Glen logo" width="420"
-                height="420">
-            <h1 class="header-order header-first-line"><span class="first-line">Briar Glen</span><span
-                    class="subtitle">Chamber of
-                    Commerce</span>
+                height="420" />
+            <h1 class="header-order header-first-line">
+                <span class="first-line">Briar Glen</span><span class="subtitle">Chamber of Commerce</span>
             </h1>
             <div class="header-order header-social">
                 <a href="https://www.facebook.com"><img class="social" src="images/facebook.png" alt="Facebook"
-                        height="64" width="64"></a>
+                        height="64" width="64" /></a>
                 <a href="https://www.twitter.com"><img class="social" src="images/twitter.png" alt="Twitter" height="64"
-                        width="64"></a>
+                        width="64" /></a>
             </div>
-            <button class="header-order menu-btn" id="ham_btn"><span>&#9776;</span><span>X</span></button>
+            <button class="header-order menu-btn" id="ham_btn">
+                <span>&#9776;</span><span>X</span>
+            </button>
             <p class="header-order date" id="date"></p>
             <nav class="header-order navigation">
                 <ul class="main-nav" id="main_nav">
@@ -56,74 +55,95 @@
                 </ul>
             </nav>
         </div>
-
     </header>
-    <main class="center">
-        <div class="form">
+    <main>
+        <div class="background-fill stacked">
             <h2 class="center">Join the Briar Glen Chamber of Commerce</h2>
-            <form method="get" action="thankyou.html">
-                <fieldset>
-                    <legend>Tell us about you and your business.</legend>
-                    <label class='top'>First Name* <input type="text" name="fname" required></label>
-                    <label class='top'>Last Name* <input type="text" name="lname" required></label>
-                    <label class='top'>Business position/title <input type="text" pattern="[A-Za-z\-]{7,}" name="position"></label>
-                    <label class='top'>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                    <label class='top'>Cell phone number* <input type="tel" name="cell_phone" placeholder="1235551234" required></label>
-                    <label class='top'>Business name* <input type="text" name="business_title" required></label>
-                    <label class='top'>Business description<textarea class="description-text" rows="4" cols="30" name="business_description"></textarea>
-                    </label>
-                </fieldset>
 
-                <fieldset>
-                    <legend>Membership Level</legend>
-                    <label class='sbs'><input type="radio" name="audience" value = "np" required> Non-profit</label>
-                    <label class='sbs'><input type="radio" name="audience" value = "bronze"> Bronze</label>
-                    <label class='sbs'><input type="radio" name="audience" value = "silver"> Silver</label>
-                    <label class='sbs'><input type="radio" name="audience" value = "gold"> Gold</label>
-                </fieldset>
+            <div class="background-fill sxs">
+                <div class="form">
+                    <form method="get" action="thankyou.html">
+                        <fieldset>
+                            <legend>Tell us about you and your business.</legend>
+                            <label class="top">First Name* <input type="text" name="fname" required /></label>
+                            <label class="top">Last Name* <input type="text" name="lname" required /></label>
+                            <label class="top">Business position/title
+                                <input type="text" pattern="[A-Za-z\- ]{7,}" name="position" /></label>
+                            <label class="top">Email*
+                                <input type="email" name="email" placeholder="someone@gmail.com" required /></label>
+                            <label class="top">Cell phone number*
+                                <input type="tel" name="cell_phone" placeholder="1235551234" required /></label>
+                            <label class="top">Business name*
+                                <input type="text" name="business_title" required /></label>
+                            <label class="top">Business description<textarea class="description-text" rows="4" cols="23"
+                                    name="business_description"></textarea>
+                            </label>
+                        </fieldset>
 
-                <input class='submit-btn' type = "submit" value = "Apply to the Chamber!">
-                <input type="text" id="application_date"  name="application_date" hidden>
-            </form>
-        </div>
-        <div class="hide-base">
-            <div class="color-box" id="gold-level">
-                <div>Gold Membership $1500</div><div>Gold Benefits
-                    <ul>
-                        <li>All silver benfits</li>
-                        <li>Highlighted Directory Listing</li>
-                        <li>Ribbon Cuttings</li>
-                        <li>4 tickets to Citizen luncheon</li>
-                    </ul>
-                </div>  
-            </div>
-            <div  class="color-box" id="silver-level">
-                <div>Silver Membership $1000</div><div>Silver Benefits
-                    <ul>
-                        <li>All bronze benfits</li>
-                        <li>Competitive Edge events</li>
-                        <li>Member spotlight</li>
-                        <li>Category banner</li>
-                    </ul>
-                </div>`
-            </div>
-            <div  class="color-box" id="bronze-level">
-                <div>Bronze Membership $500</div><div>Bronze Benefits
-                    <ul>
-                        <li>Chamber directory listing</li>
-                        <li>Relay conference access</li>
-                        <li>Chamber email list access</li>
-                        <li>Membership plaque & decal</li>
-                    </ul>
+                        <fieldset>
+                            <legend>Membership Level</legend>
+                            <label class="sbs"><input type="radio" name="audience" value="np" required />
+                                Non-profit</label>
+                            <label class="sbs"><input type="radio" name="audience" value="bronze" />
+                                Bronze</label>
+                            <label class="sbs"><input type="radio" name="audience" value="silver" />
+                                Silver</label>
+                            <label class="sbs"><input type="radio" name="audience" value="gold" /> Gold</label>
+                        </fieldset>
+
+                        <input class="submit-btn" type="submit" value="Apply to the Chamber!" />
+                        <input type="text" id="application_date" name="application_date" hidden />
+                    </form>
+                </div>
+                <div class="hide-base">
+                    <div class="color-box" id="gold-level">
+                        <div>Gold Membership $1500</div>
+                        <div>
+                            Gold Benefits
+                            <ul>
+                                <li>All silver benfits</li>
+                                <li>Highlighted Directory Listing</li>
+                                <li>Ribbon Cuttings</li>
+                                <li>4 tickets to Citizen luncheon</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="color-box" id="silver-level">
+                        <div>Silver Membership $1000</div>
+                        <div>
+                            Silver Benefits
+                            <ul>
+                                <li>All bronze benfits</li>
+                                <li>Competitive Edge events</li>
+                                <li>Member spotlight</li>
+                                <li>Category banner</li>
+                            </ul>
+                        </div>
+                        `
+                    </div>
+                    <div class="color-box" id="bronze-level">
+                        <div>Bronze Membership $500</div>
+                        <div>
+                            Bronze Benefits
+                            <ul>
+                                <li>Chamber directory listing</li>
+                                <li>Relay conference access</li>
+                                <li>Chamber email list access</li>
+                                <li>Membership plaque & decal</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
     <footer>
         <div class="footer-address">
-            <img class="footer-logo" src="images/briar_glen_logo_4.webp" alt="Briar Glen logo" width="420" height="420">
+            <img class="footer-logo" src="images/briar_glen_logo_4.webp" alt="Briar Glen logo" width="420"
+                height="420" />
             <div class="address">
-                <h2 class="footer-first-line"><span class="first-line">Briar Glen</span>
+                <h2 class="footer-first-line">
+                    <span class="first-line">Briar Glen</span>
                     <span class="footer-subtitle">Chamber of Commerce</span>
                 </h2>
                 <p class="p-tight">1 Main St</p>
@@ -135,24 +155,20 @@
             <p>(253)555-1212</p>
             <a class="map-link" href="http://maps.google.com">📍Find us!</a>
         </div>
-        <hr>
+        <hr />
         <div class="footer-footer">
             <div class="footer-footer-top-row">
                 <p>©<span id="year"></span> Briar Glen Chamber</p>
                 <p><span class="vertical-bar">|</span></p>
-                <p><b>Adam Ulrich</b>
+                <p><b>Adam Ulrich</b></p>
                 <p><span class="vertical-bar">|</span></p>
                 <p>WDD230 Project</p>
                 <p><span class="vertical-bar">|</span></p>
             </div>
             <div class="footer-footer-bottom-row">
-                <p>
-                    Last Updated: <span id="timestamp"></span>
-                </p>
+                <p>Last Updated: <span id="timestamp"></span></p>
             </div>
         </div>
-
-
     </footer>
 </body>
 

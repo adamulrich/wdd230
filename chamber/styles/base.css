@@ -220,6 +220,8 @@ nav a:hover {
 main {
   display: flex;
   flex-direction: column;
+  width: 98%;
+  min-width: 320px;
 }
 
 .main-div {
@@ -227,6 +229,7 @@ main {
   outline: 2px solid black;
   padding: 0.75em;
   margin-top: 15px;
+  
 }
 
 .news-release,
@@ -261,10 +264,14 @@ main div h2 {
   font-size: x-large;
   color: var(--accent3-color);
   text-align: left;
+}
+
+.text-shadow {
   text-shadow:
-    -1px 1px 0 white,
-    1px 1px 0 white,
-    1px -1px 0 white;
+  -1px 1px 0 white,
+  1px 1px 0 white,
+  1px -1px 0 white;
+
 }
 
 .main-div,
@@ -512,18 +519,24 @@ img {
 
 /* ----------- FORM -------------- */
 
+form {
+
+}
+
 form fieldset {
-  margin: 2rem 0;
-  border: 1px solid #445ba9;
+  margin: 2rem 1px;
+  border: 1px solid var(--accent3-color);;
   border-radius: 10px;
   padding: 0.5rem;
   padding-right: 1.5rem;
+  max-width: 20rem;
 }
 
 form legend {
-  color: #445ba9;
+  color: var(--accent3-color);
   margin: 0 1rem;
   padding: 0 0.5rem;
+  max-width: 22rem;
 }
 
 form label.top,
@@ -542,10 +555,11 @@ form label.top textarea {
   border: solid 1px #999;
   border-radius: 4px;
   padding: 0.75rem;
+  margin-left: 5px;
   color: #555;
-  width: 100%;
-  max-width: 15rem;
-  background-color: #0000001a;
+  max-width: 25rem;
+  min-width: 13rem;
+  background-color: #fff7effb;
 }
 
 form label.sbs {
@@ -564,6 +578,12 @@ form input.submit-btn {
   width: 96%;
   max-width: 20rem;
 }
+
+form label.top input, 
+form label.top textarea {
+  border-left: #fff7effb solid 6px;
+}
+
 
 form label.top input:required {
   border-left: red solid 6px;
@@ -613,8 +633,6 @@ h2.center {
 }
 
 .hide-base {
-  margin-top: 80px;
-  margin-left: 40px;
   display: none;
 }
 
@@ -660,7 +678,8 @@ div.top-header button.open span:nth-child(1) {
 }
 
 div.form {
-  max-width: 19rem;
+  min-width: 15rem;
+  max-width: 21rem;
 }
 
 div.color-box li {
@@ -672,4 +691,22 @@ div.color-box li {
 
 div.color-box ul {
 padding-inline-start: 20px;
+}
+
+.background-fill {
+  background-color: var(--nav-background-color);
+  margin: 20px;
+}
+
+.stacked {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.sxs {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-evenly;
 }
