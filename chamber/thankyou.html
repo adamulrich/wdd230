@@ -23,7 +23,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="scripts/script.js" defer></script>
-    
 
     <title>Briar Glen Chamber of Commerce</title>
 </head>
@@ -58,66 +57,8 @@
         </div>
 
     </header>
-    <main class="center">
-        <div class="form">
-            <h2 class="center">Join the Briar Glen Chamber of Commerce</h2>
-            <form method="get" action="thankyou.html">
-                <fieldset>
-                    <legend>Tell us about you and your business.</legend>
-                    <label class='top'>First Name* <input type="text" name="fname" required></label>
-                    <label class='top'>Last Name* <input type="text" name="lname" required></label>
-                    <label class='top'>Business position/title <input type="text" pattern="[A-Za-z\-]{7,}" name="position"></label>
-                    <label class='top'>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                    <label class='top'>Cell phone number* <input type="tel" name="cell_phone" placeholder="1235551234" required></label>
-                    <label class='top'>Business name* <input type="text" name="business_title" required></label>
-                    <label class='top'>Business description<textarea class="description-text" rows="4" cols="30" name="business_description"></textarea>
-                    </label>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Membership Level</legend>
-                    <label class='sbs'><input type="radio" name="audience" value = "np" required> Non-profit</label>
-                    <label class='sbs'><input type="radio" name="audience" value = "bronze"> Bronze</label>
-                    <label class='sbs'><input type="radio" name="audience" value = "silver"> Silver</label>
-                    <label class='sbs'><input type="radio" name="audience" value = "gold"> Gold</label>
-                </fieldset>
-
-                <input class='submit-btn' type = "submit" value = "Apply to the Chamber!">
-                <input type="text" id="application_date"  name="application_date" hidden>
-            </form>
-        </div>
-        <div class="hide-base">
-            <div class="color-box" id="gold-level">
-                <div>Gold Membership $1500</div><div>Gold Benefits
-                    <ul>
-                        <li>All silver benfits</li>
-                        <li>Highlighted Directory Listing</li>
-                        <li>Ribbon Cuttings</li>
-                        <li>4 tickets to Citizen luncheon</li>
-                    </ul>
-                </div>  
-            </div>
-            <div  class="color-box" id="silver-level">
-                <div>Silver Membership $1000</div><div>Silver Benefits
-                    <ul>
-                        <li>All bronze benfits</li>
-                        <li>Competitive Edge events</li>
-                        <li>Member spotlight</li>
-                        <li>Category banner</li>
-                    </ul>
-                </div>`
-            </div>
-            <div  class="color-box" id="bronze-level">
-                <div>Bronze Membership $500</div><div>Bronze Benefits
-                    <ul>
-                        <li>Chamber directory listing</li>
-                        <li>Relay conference access</li>
-                        <li>Chamber email list access</li>
-                        <li>Membership plaque & decal</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <main>
+        <h2 class="spotlight-div center">Thank you for providing your information. We'll be contacting you soon about your application!</h2>
     </main>
     <footer>
         <div class="footer-address">

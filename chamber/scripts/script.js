@@ -2,6 +2,15 @@
 date = new Date();
 document.querySelector("#year").textContent = date.getFullYear();
 document.querySelector("#timestamp").textContent= document.lastModified;
+var URL
+// handle case where no index.html is specified in url
+if (document.URL.split("/").slice(-2)[0] =='chamber' &
+    document.URL.split("/").slice(-1)[0] == '') {
+    URL = "index.html"
+}
+else {
+    URL = document.URL.split("/").slice(-1)[0]
+}
 
 // set date value in header
 const fullDate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(date);
@@ -32,16 +41,11 @@ const mainNav = document.getElementById("main_nav");
 const mainNavChildren = mainNav.children;
 
 for (let i = 0; i < mainNavChildren.length; i++) {
-    let URL = location.href.split("/").slice(-1)[0];
-    if (URL == "" | URL == "#") { 
-        URL = "index.html"
-    }
     if (mainNavChildren[i].children[0].href.split("/").slice(-1)[0] == URL) {
         mainNavChildren[i].children[0].classList.add('current-menu');
     }
 
 }
-
 
 // lazy loading images
 const images = document.querySelectorAll("[data-src]");
@@ -84,3 +88,7 @@ images.forEach(image => {
     imgObserver.observe(image);
 })
 
+
+if (URL == "join.html") {
+    document.getElementById("application_date").value = date.getTime();
+}

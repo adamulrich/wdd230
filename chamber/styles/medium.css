@@ -19,7 +19,7 @@
   }
 
   /* main */
-  main {
+  main.fixed {
     flex-flow: row wrap;
     justify-content: space-between;
   }
@@ -181,4 +181,14 @@
   img.discover-img:hover {
     border-color: var(--image-hover-color);
   }
+
+  main.center {
+    max-width: max-content;
+    justify-content: space-evenly;
+  }
+
+  .hide-base {
+    display: block;
+  }
+  
 }

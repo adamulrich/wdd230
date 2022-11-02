@@ -62,7 +62,7 @@
   }
 
   /* main */
-  main {
+  main.fixed {
     flex-flow: column wrap;
     height: 740px;
     align-content: space-evenly;

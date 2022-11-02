@@ -1,10 +1,10 @@
 :root {
-  --back: hsla(150, 50%, 30%, 1);
+  --back: #26734d;
   --back2: #26734d80;
-  --foredark: hsla(0, 0%, 10%, 1);
-  --forelight: hsla(0, 0%, 100%, 1);
-  --border: hsl(0, 0%, 20%);
-  --borderlight: hsl(0, 0%, 33%);
+  --foredark: #1a1a1a;
+  --forelight: #fff;
+  --border: #333;
+  --borderlight: #545454;
   --shadow: #808080;
   --zebra: #ededed;
 }
@@ -21,12 +21,6 @@ caption {
   caption-side: bottom;
   color: var(--back);
   font-size: 0.85rem;
-}
-
-tr:first-child th,
-.highlight {
-  background-color: var(--back);
-  color: var(--forelight);
 }
 
 th,
@@ -49,4 +43,10 @@ tbody tr:nth-child(even) {
 
 td:hover {
   background-color: var(--back2);
+}
+
+tr:first-child th,
+.highlight {
+  background-color: var(--back);
+  color: var(--forelight);
 }
