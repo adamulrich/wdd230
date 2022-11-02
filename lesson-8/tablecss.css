@@ -46,3 +46,7 @@ td {
 tbody tr:nth-child(even) {
   background-color: var(--zebra);
 }
+
+td:hover {
+  background-color: var(--back2);
+}
