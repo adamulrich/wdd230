@@ -1,0 +1,63 @@
+/* stylelint-disable indentation */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: #e5f7ce;
+    border: 1px solid #bbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section > p {
+    min-height: 10px;
+}
+
+img {
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 30px #777;
+    height: 300px;
+    border: 1px solid #333;
+    margin-bottom: 0;
+}
+
+footer {
+    border-top: 1px solid #555;
+    padding: 20px;
+}
+
+h2 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.caption {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    font-weight: 400;
+    font-size: medium;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 15px;
+    background-color: #e5f7ce;
+    width: 100%;
+    height: 60px;
+    border: 1px solid #bbb;
+}
+
+section:hover {
+    background-color: #bbb;
+}
