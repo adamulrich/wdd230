@@ -628,16 +628,17 @@ h2.center {
   100% { opacity: 1; }
 }
 
+div.color-box div,
+div.color-box:hover div {
+  animation: appear 2s ease;
+}
+
 div.color-box div:nth-child(1) {
   display: block;
 }
 
 div.color-box div:nth-child(2) {
   display: none;
-}
-
-div.color-box:hover div {
-  animation: appear 2s ease;
 }
 
 div.top-header button span:nth-child(1) {
