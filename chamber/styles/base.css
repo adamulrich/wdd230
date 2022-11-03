@@ -229,7 +229,6 @@ main {
   outline: 2px solid black;
   padding: 0.75em;
   margin-top: 15px;
-  
 }
 
 .news-release,
@@ -268,10 +267,9 @@ main div h2 {
 
 .text-shadow {
   text-shadow:
-  -1px 1px 0 white,
-  1px 1px 0 white,
-  1px -1px 0 white;
-
+    -1px 1px 0 white,
+    1px 1px 0 white,
+    1px -1px 0 white;
 }
 
 .main-div,
@@ -519,13 +517,9 @@ img {
 
 /* ----------- FORM -------------- */
 
-form {
-
-}
-
 form fieldset {
   margin: 2rem 1px;
-  border: 1px solid var(--accent3-color);;
+  border: 1px solid var(--accent3-color);
   border-radius: 10px;
   padding: 0.5rem;
   padding-right: 1.5rem;
@@ -579,11 +573,10 @@ form input.submit-btn {
   max-width: 20rem;
 }
 
-form label.top input, 
+form label.top input,
 form label.top textarea {
   border-left: #fff7effb solid 6px;
 }
-
 
 form label.top input:required {
   border-left: red solid 6px;
@@ -690,7 +683,7 @@ div.color-box li {
 }
 
 div.color-box ul {
-padding-inline-start: 20px;
+  padding-inline-start: 20px;
 }
 
 .background-fill {
