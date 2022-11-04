@@ -102,8 +102,8 @@ img.logo {
 
 img.social {
   border-radius: 100%;
-  width: 48px;
-  margin: 0 20px 0 5px;
+  width: 2em;
+  margin: 0 4px;
   height: auto;
 }
 
@@ -793,9 +793,11 @@ div.member-list h2 {
 
 .member-list p.member-address,
 .member-list a.member-email {
+  text-align: left;
   display: none;
 }
 
-.member-list img {
+div.member-list img {
+  align-self: center;
   display: none;
 }

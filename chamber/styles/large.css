@@ -163,10 +163,10 @@
   .member-list p.member-address {
     order: 5;
     display: block;
-    width: 245px;
+    width: 300px;
   }
 
-  .member-list img {
+  div.member-list img {
     order: 6;
     display: block;
     height: 40px;
