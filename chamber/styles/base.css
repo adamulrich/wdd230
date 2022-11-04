@@ -569,6 +569,11 @@ form input.submit-btn {
   max-width: 20rem;
 }
 
+form input.submit-btn:hover {
+  background-color: #49170b;
+  cursor: pointer;
+}
+
 form label.top input,
 form label.top textarea {
   border-left: #fff7effb solid 6px;
@@ -692,4 +697,51 @@ div.color-box ul {
   flex-flow: row nowrap;
   width: 100%;
   justify-content: space-evenly;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section.member-detail {
+  background-color: var(--primary-color);
+  border: 1px solid #bbb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.25rem;
+  padding: 0.35rem;
+}
+
+section.member-detail:hover {
+  background-color: var(--nav-link-color);
+}
+
+section.member-detail > p {
+  min-height: 10px;
+}
+
+section img.member-detail {
+  box-shadow: 0 0 30px #777;
+  height: 100px;
+  width: auto;
+  max-width: 325px;
+  border: 2px solid #333;
+  margin-bottom: 0;
+}
+
+p.member-detail {
+  font-family: dosis, sans-serif;
+  margin: 10px;
+  font-weight: 400;
+  font-size: large;
+}
+
+a.member-detail {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px;
+  font-weight: 400;
+  font-size: medium;
+  color: var(--nav-hover-link-color);
 }

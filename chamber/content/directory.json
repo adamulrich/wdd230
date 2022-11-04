@@ -1,0 +1,128 @@
+{
+  "schema": {
+    "fields": [
+      { "name": "index", "type": "integer" },
+      { "name": "name", "type": "string" },
+      { "name": "address1", "type": "string" },
+      { "name": "phone", "type": "string" },
+      { "name": "email", "type": "string" },
+      { "name": "business_type", "type": "string" },
+      { "name": "url", "type": "string" },
+      { "name": "image_url", "type": "string" }
+    ],
+    "primaryKey": ["index"],
+    "pandas_version": "1.4.0"
+  },
+  "data": [
+    {
+      "index": 0,
+      "name": "Taco Time NW",
+      "address1": "17140 N.E. Redmond Way<br>Redmond, Washington 98052",
+      "phone": "(425) 883-6979",
+      "email": "guestrelations@tacotimenw.com",
+      "business_type": "RESTAURANT",
+      "url": "http://www.tacotimenw.com/",
+      "image_url": "images/members/tacotimenw_250.webp"
+    },
+    {
+      "index": 1,
+      "name": "MOD Pizza",
+      "address1": "8900 161st Ave NE\u00a0, Ste 165<br>Redmond,\u00a0Washington\u00a098052",
+      "phone": "(425) 497-5104",
+      "email": "guestrelations@modpizza.com",
+      "business_type": "RESTAURANT",
+      "url": "https://locations.modpizza.com/usa/wa/redmond/8900-161st-ave-ne",
+      "image_url": "images/members/modpizza_250.webp"
+    },
+    {
+      "index": 2,
+      "name": "FedEx Office Print & Ship Center",
+      "address1": "16815 NE Redmond Way , Suite 220<br>Redmond, Washington 98052",
+      "phone": " (425) 882-1949",
+      "email": "USA5152@FEDEX.COM",
+      "business_type": "SHIPPING AND MAILING SERVICE",
+      "url": "https://local.fedex.com/en-us/wa/redmond/office-5152",
+      "image_url": "images/members/fedex_250.png"
+    },
+    {
+      "index": 3,
+      "name": "KinderCare",
+      "address1": " 6534 E Lake Sammamish Pkwy NE<br>Redmond, Washington 98052",
+      "phone": "(425) 869-2084",
+      "email": "help@kindercare.com",
+      "business_type": "PRESCHOOL",
+      "url": "https://www.kindercare.com/our-centers/redmond/wa/301240",
+      "image_url": "images/members/kindercare_250.webp"
+    },
+    {
+      "index": 4,
+      "name": "AT&T",
+      "address1": "7525 166th Ave NE , Suite D120<br>Redmond, Washington 98052",
+      "phone": "(425) 881-5983",
+      "email": "help@attredmond.com",
+      "business_type": "CELL PHONE STORE",
+      "url": "https://www.att.com/stores/washington/redmond/674?source=E-lls10000000000X",
+      "image_url": "images/members/att_250.webp"
+    },
+    {
+      "index": 5,
+      "name": "Fred Meyer",
+      "address1": "17667 Ne 76Th St<br>Redmond, Washington 98052",
+      "phone": "(425) 556-8000",
+      "email": "help@fredmeyer70100664.com",
+      "business_type": "RETAIL",
+      "url": "https://www.fredmeyer.com/stores/grocery/wa/redmond/redmond/701/00664",
+      "image_url": "images/members/fredmeyer_250.jpg"
+    },
+    {
+      "index": 6,
+      "name": "Rite Aid",
+      "address1": "17220 Redmond Way Northeast<br>Redmond, Washington 98052",
+      "phone": "(425) 883-1516",
+      "email": "help@riteaidredmond.com",
+      "business_type": "PHARMACY",
+      "url": "https://www.riteaid.com/locations/wa/redmond/17220-redmond-way-northeast.html",
+      "image_url": "images/members/riteaid_250.jpg"
+    },
+    {
+      "index": 7,
+      "name": "Mobile Notary of Seattle LLC",
+      "address1": "Redmond, WA",
+      "phone": "(206) 636-1229",
+      "email": "help@notary-seattle.com",
+      "business_type": "NOTARY PUBLIC",
+      "url": "https://notary-seattle.com/",
+      "image_url": "images/members/mobilenotary_250.webp"
+    },
+    {
+      "index": 8,
+      "name": "Aloft Hotels",
+      "address1": "15220 NE Shen Street<br>Redmond, Washington 98052",
+      "phone": "(425) 636-9922",
+      "email": "help@aloftredmond.com",
+      "business_type": "HOTEL",
+      "url": "https://www.marriott.com/en-us/hotels/seaad-aloft-seattle-redmond/overview/",
+      "image_url": "images/members/aloft.webp"
+    },
+    {
+      "index": 9,
+      "name": "Orbit Law",
+      "address1": "2459 152nd Ave NE Building 17<br>Redmond, WA 98052",
+      "phone": "(206) 623-3352",
+      "email": "info@orbitlawpllc.com",
+      "business_type": "IMMIGRATION ATTORNEY",
+      "url": "https://www.orbitlawpllc.com/",
+      "image_url": "images/members/orbitlaw.webp"
+    },
+    {
+      "index": 10,
+      "name": "Marriott Hotel",
+      "address1": "7401 164th Avenue NE<br>Redmond, Washington 98052",
+      "phone": "(425) 498-4000",
+      "email": "help@mariottsredmond.com",
+      "business_type": "HOTEL",
+      "url": " https://www.marriott.com/en-us/hotels/seamc-seattle-marriott-redmond/overview",
+      "image_url": "images/members/marriott.webp"
+    }
+  ]
+}
