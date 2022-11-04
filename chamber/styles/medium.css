@@ -190,4 +190,9 @@
   .hide-base {
     display: block;
   }
+
+  .member-list a.member-email {
+    display: block;
+    width: 200px;
+  }
 }

@@ -699,12 +699,17 @@ div.color-box ul {
   justify-content: space-evenly;
 }
 
-.grid {
+.member-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-section.member-detail {
+.member-list {
+  display: flex;
+  flex-direction: column;
+}
+
+section.member-detail-grid {
   background-color: var(--primary-color);
   border: 1px solid #bbb;
   display: flex;
@@ -714,15 +719,15 @@ section.member-detail {
   padding: 0.35rem;
 }
 
-section.member-detail:hover {
+section.member-detail-grid:hover {
   background-color: var(--nav-link-color);
 }
 
-section.member-detail > p {
+section.member-detail-grid > p {
   min-height: 10px;
 }
 
-section img.member-detail {
+section img.member-detail-grid {
   box-shadow: 0 0 30px #777;
   height: 100px;
   width: auto;
@@ -731,17 +736,65 @@ section img.member-detail {
   margin-bottom: 0;
 }
 
-p.member-detail {
+p.member-detail-grid {
   font-family: dosis, sans-serif;
   margin: 10px;
   font-weight: 400;
   font-size: large;
 }
 
-a.member-detail {
+a.member-detail-grid {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 10px;
   font-weight: 400;
   font-size: medium;
   color: var(--nav-hover-link-color);
+}
+
+.discover-button {
+  margin: 5px;
+  margin-right: 15px;
+  width: auto;
+  background-color: transparent;
+  border: 2px solid black;
+  font-size: 20px;
+  max-width: 200px;
+  color: #555;
+}
+
+.discover-button:hover {
+  background-color: var(--accent1-color);
+}
+
+div.discover-button-bar {
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.member-list section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+div.member-list p,
+div.member-list h2,
+div.member-list a {
+  margin-left: 20px;
+}
+
+div.member-list h2 {
+  font-size: smaller;
+  width: 200px;
+}
+
+.member-list p.member-address,
+.member-list a.member-email {
+  display: none;
+}
+
+.member-list img {
+  display: none;
 }

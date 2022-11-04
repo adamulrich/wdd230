@@ -159,4 +159,17 @@
     flex-wrap: nowrap;
     justify-content: center;
   }
+
+  .member-list p.member-address {
+    order: 5;
+    display: block;
+    width: 380px;
+  }
+
+  .member-list img {
+    order: 6;
+    display: block;
+    height: 40px;
+    width: auto;
+  }
 }

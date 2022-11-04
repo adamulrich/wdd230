@@ -98,7 +98,7 @@ if (URL == "join.html") {
 // add cards and read json for directory page
 if (URL == 'directory.html') {
 
-    const requestURL = 'content/directory.json';
+    const requestURL = 'content/data.json';
     const cards = document.querySelector('.cards');
     
     
@@ -110,6 +110,24 @@ if (URL == 'directory.html') {
         const members = jsonObject['data'];
         members.forEach(displayMembers);
     });
+
+    gridButton = document.getElementById("grid");
+    listButton = document.getElementById("list");
+    display = document.getElementById("member-data")
+
+    gridButton.addEventListener("click", () => {
+        // example using arrow function
+        display.classList.add("member-grid");
+        display.classList.remove("member-list");
+    });
+
+    listButton.addEventListener("click", () => {
+        // example using arrow function
+        display.classList.remove("member-grid");
+        display.classList.add("member-list");
+    });
+
+
 }
 
 function displayMembers(member) {
@@ -134,22 +152,19 @@ function displayMembers(member) {
     if (member.index > 3) {
     memberLogo.setAttribute('loading', 'lazy');
     }
-    memberLogo.classList.add('member-detail')
 
     memberAddress.innerHTML = member.address1;
-    memberAddress.classList.add('member-detail')
+    memberAddress.classList.add('member-address')
 
-    memberPhone.innerHTML = `<b>phone:</b> ${member.phone}`;
+    memberPhone.innerHTML = `${member.phone}`;
     memberPhone.href = `tel:${member.phone}`
-    memberPhone.classList.add('member-detail')
 
     memberURL.textContent = 'Visit website';
     memberURL.href = member.url;
-    memberURL.classList.add('member-detail')
 
     memberEmail.href = `mailto:${member.email}`;
     memberEmail.textContent = member.email;
-    memberEmail.classList.add('member-detail');
+    memberEmail.classList.add('member-email')
 
     // Add/append the section(card) with the h2 element
     card.appendChild(memberName);
@@ -159,8 +174,9 @@ function displayMembers(member) {
     card.appendChild(memberURL);
     card.appendChild(memberEmail);
     
-  
     // Add/append the existing HTML div with the cards class with the section(card)
-    card.classList.add('member-detail')
+    card.classList.add('member-detail-grid')
     document.querySelector('div.cards').appendChild(card);
+
 }
+
