@@ -1,12 +1,3 @@
-# import pandas
-
-# excel_data_fragment = pandas.read_excel('JSON.xlsx', sheet_name='Sheet1')
-
-# json_str = excel_data_fragment.to_json()
-
-# print('Excel Sheet to JSON:\n', json_str)
-
-
 import pandas
 import json
 
