@@ -751,10 +751,9 @@ section.member-detail-grid a {
   color: var(--nav-hover-link-color);
 }
 
-.discover-button {
+.directory-button {
   margin: 5px;
   margin-right: 15px;
-  height: 40px;
   width: auto;
   background-color: transparent;
   border: 2px solid black;
@@ -763,12 +762,12 @@ section.member-detail-grid a {
   color: #555;
 }
 
-.discover-button:hover {
+.directory-button:hover {
   background-color: var(--accent1-color);
 }
 
-div.discover-button-bar {
-  height: 40px;
+div.directory-button-bar {
+  height: 60px;
   margin-bottom: 15px;
 }
 
