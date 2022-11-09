@@ -800,3 +800,10 @@ div.member-list img {
   align-self: center;
   display: none;
 }
+
+div.credit {
+  font-size: medium;
+  text-align: center;
+  margin: 5px;
+  width: 100%;
+}
