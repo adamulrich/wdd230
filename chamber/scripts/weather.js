@@ -1,7 +1,7 @@
 
 // location and api and url constants
-const lat = 47.30;
-const lon = -122.22;
+const lat = 47.350339;
+const lon = -122.176031;
 const apikey = "9880917462831086d4f7d0427eebff95";
 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apikey}&units=imperial`;
 
