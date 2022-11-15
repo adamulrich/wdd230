@@ -9,6 +9,11 @@
     width: 100%;
   }
 
+  header div h1 {
+    font-size: 44px;
+    margin-left: 0;
+  }
+
   header {
     padding-top: 20px;
   }

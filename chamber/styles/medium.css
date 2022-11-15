@@ -2,11 +2,17 @@
   /* header */
   header div h1 {
     font-size: 44px;
-    margin-left: -1em;
+    margin-left: -13%;
   }
 
   .subtitle {
     font-size: 20px;
+  }
+
+  img.social {
+    width: 80%;
+    margin: 0 4px;
+    height: auto;
   }
 
   .date {
