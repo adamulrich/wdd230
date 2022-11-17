@@ -2,10 +2,13 @@
 // location and api and url constants
 const lat = 47.350339;
 const lon = -122.176031;
+const apikey = "9880917462831086d4f7d0427eebff95";
+const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apikey}&units=imperial`;
 
-// Loads weather data from location above using OpenWeatherMap api.
-async function loadWeatherData(weatherUrl) {
-    
+
+// Loads weather data from location above using the api key and OpenWeatherMap api.
+async function loadWeatherData () {
+
     const response = await fetch(weatherUrl);
 
     if (response.ok) {
@@ -40,22 +43,10 @@ async function loadWeatherData(weatherUrl) {
         const iconId = weatherData.weather[0].icon;
         const iconUrl = `https://openweathermap.org/img/wn/${iconId}@4x.png`;
         document.getElementById('weather_icon').src = iconUrl;
-        document.getElementById('weather_icon').alt = weatherData.weather[0].description;
+        document.getElementById('weather_icon').alt = weatherData.list[0].weather[0].description;
+        
     }
+
 }
 
-async function loadToken() {
-    let tokenURL = "https://2riyw4y7f7h64hs3im5q6g3v340iylhl.lambda-url.us-west-2.on.aws/?token=openweatherapi_token";    
-    const response = await fetch(tokenURL);
-
-    if (response.ok) {
-        const token = await response.json();
-        const apikey = token;
-        const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apikey}&units=imperial`;
-        console.log(weatherUrl)
-
-        loadWeatherData(weatherUrl);
-    }
-}
-
-loadToken();
+loadWeatherData()
