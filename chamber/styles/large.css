@@ -126,10 +126,6 @@
     display: block;
   }
 
-  main p {
-    font-size: 12px;
-  }
-
   /* footer */
   .address {
     width: auto;

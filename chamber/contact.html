@@ -56,7 +56,70 @@
 
     </header>
     <main>
-    <div class="cards grid"></div>
+        <div class="background-fill">
+            <h2 class="center">Contact the Chamber</h2>
+        </div>  
+        <div class="contact-main">
+            <div class="contact-div">
+                <div>
+                    <h3>We would love to hear from you!</h3>
+                    <p>Our normal business hours and contact information are below. We are also closed on 
+                        government holidays.
+                    </p> 
+                </div> 
+                    <table class="left">
+                    <tr>
+                        <td><img src="images/time.svg" width="20" height="20"></td>
+                        <td><h3>hours</h3></td>
+                        <td>M-F, 9am - 6pm</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/email.svg" width="20" height="20"></td>
+                        <td><h3>email</h3></td>
+                        <td><a href="info@briarglenchamber.org">info@briaglenchamber.org</a></td>
+                    </tr>        
+                    <tr>
+                        <td><img src="images/phone.svg" width="20" height="20"></td>
+                        <td><h3>phone</h3></td>
+                        <td><a href="tel:2535551212">(253)555-1212</a></td>
+                    </tr>        
+                    <tr>
+                        <td><img src="images/location.svg" width="20" height="20"></td>
+                        <td><h3>address</h3></td>
+                        <td>1 Main St, Briar Glen, WA 98001</td>
+                    </tr>        
+                </table>           
+                <div>
+                    <h3>Board of Directors Meetings</h3> 
+                    <p>Our monthly board of directors meetings are on the first Thursday every month at 7pm 
+                        at the Hampton Inns conference room. If you'd like to get on the agenda, please send us an email
+                        at agenda@briarglenchamber.org 
+                    </p>
+                </div> 
+            </div>
+            
+
+            <div class="contact-div">
+                <div class="form">
+                    <form method="get" action="thankyou_question.html">
+                        <fieldset>
+                            <legend>Contact us.</legend>
+                            <label class="top">First Name* <input type="text" name="fname" required /></label>
+                            <label class="top">Last Name* <input type="text" name="lname" required /></label>
+                            <label class="top">Email*
+                                <input type="email" name="email" placeholder="someone@gmail.com" required /></label>
+                            <label class="top">Your question.<textarea class="description-text" rows="4" cols="23"
+                                    name="question"></textarea>
+                            </label>
+                        </fieldset>
+
+                        <input class="submit-btn" type="submit" value="Send us your question." />
+                        <input type="text" id="application_date" name="application_date" hidden />
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </main>
     <footer>
         <div class="footer-address">

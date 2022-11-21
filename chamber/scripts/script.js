@@ -180,3 +180,41 @@ function displayMembers(member) {
 
 }
 
+// add cards and read json for directory page
+if (URL == 'index.html') {
+
+    const requestURL = 'content/data.json';
+    
+    fetch(requestURL)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (jsonObject) {
+        const members = jsonObject['data'];
+        goldMembers = members.filter(member => member.membership_level === 'gold');
+        updateSpotlights(goldMembers);
+    })
+}
+
+function updateSpotlights(members) {
+    const cards = document.querySelectorAll('.spotlight-div');
+    
+    shuffleArray(members)   
+    memberIndex = 0
+
+    for (i =0; i < cards.length; i++) {
+        cards[i].children[0].innerText = members[memberIndex].name;
+        cards[i].children[1].src = members[memberIndex].image_url;
+        cards[i].children[1].alt = members[memberIndex].name;
+        cards[i].children[2].innerText = members[memberIndex].slogan;
+        cards[i].children[4].href = "mailto:" + members[memberIndex].email;
+        cards[i].children[4].innerText = members[memberIndex].email;
+        cards[i].children[5].innerText = members[memberIndex].phone;
+        memberIndex ++;
+    }
+    
+
+}
+function shuffleArray(arr) {
+    arr.sort(() => Math.random() - 0.5);
+}

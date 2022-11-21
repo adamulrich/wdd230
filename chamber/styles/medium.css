@@ -177,7 +177,7 @@
     height: auto;
   }
 
-  .discover-text-content {
+  .flex-left {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -200,5 +200,12 @@
   .member-list a.member-email {
     display: block;
     width: 230px;
+  }
+
+  .contact-main {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-evenly;
   }
 }
