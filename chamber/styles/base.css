@@ -90,9 +90,18 @@ header {
 img.logo {
   max-width: 75px;
   min-width: 15px;
+  width: 100%;
+  margin-top: 5px;
+  height: auto;
+}
+
+.header-link {
+  max-width: 75px;
+  min-width: 15px;
   width: 7%;
   margin-top: 5px;
   height: auto;
+
 }
 
 .header-social {
