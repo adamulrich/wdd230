@@ -140,7 +140,6 @@ function displayMembers(member) {
     let memberURL = document.createElement('a');
     let memberEmail = document.createElement('a');
 
-
     // Change the textContent property of the h2 element to contain the prophet's full name
     memberName.textContent = member.name;
 
@@ -180,7 +179,7 @@ function displayMembers(member) {
 
 }
 
-// add cards and read json for directory page
+// add spotlight for gold members
 if (URL == 'index.html') {
 
     const requestURL = 'content/data.json';
@@ -196,6 +195,7 @@ if (URL == 'index.html') {
     })
 }
 
+// helper function to add content
 function updateSpotlights(members) {
     const cards = document.querySelectorAll('.spotlight-div');
     

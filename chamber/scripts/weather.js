@@ -43,7 +43,7 @@ async function loadWeatherData () {
         const iconId = weatherData.weather[0].icon;
         const iconUrl = `https://openweathermap.org/img/wn/${iconId}@4x.png`;
         document.getElementById('weather_icon').src = iconUrl;
-        document.getElementById('weather_icon').alt = weatherData.list[0].weather[0].description;
+        document.getElementById('weather_icon').alt = weatherData.weather[0].description;
         
     }
 
