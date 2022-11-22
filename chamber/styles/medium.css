@@ -1,18 +1,31 @@
 @media only screen and (min-width: 748px) {
   /* header */
+
+  .logo-name-div {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 400px;
+  }
+
+  .header-link {
+    max-width: 75px;
+    min-width: 15px;
+    width: 100px;
+    margin-top: 5px;
+    height: auto;
+  }
+
   header div h1 {
-    font-size: 44px;
-    margin-left: -13%;
+    width: 200px;
+    font-size: 30px;
   }
 
   .subtitle {
-    font-size: 20px;
+    font-size: 16px;
   }
 
-  img.social {
-    width: 80%;
-    margin: 0 4px;
-    height: auto;
+  .header-first-line {
+    width: 200px;
   }
 
   .date {

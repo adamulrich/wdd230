@@ -205,6 +205,7 @@ function updateSpotlights(members) {
     for (i =0; i < cards.length; i++) {
         cards[i].children[0].innerText = members[memberIndex].name;
         cards[i].children[1].src = members[memberIndex].image_url;
+        cards[i].children[1].style.width = "auto";
         cards[i].children[1].alt = members[memberIndex].name;
         cards[i].children[2].innerText = members[memberIndex].slogan;
         cards[i].children[4].href = "mailto:" + members[memberIndex].email;
