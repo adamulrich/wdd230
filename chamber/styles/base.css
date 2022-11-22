@@ -419,10 +419,6 @@ table.center {
   margin-right: auto;
 }
 
-table.left {
-  /* margin-left: 25px; */
-}
-
 .weather-forecast {
   width: 80%;
   margin-left: auto;
