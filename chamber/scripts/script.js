@@ -201,14 +201,40 @@ function updateSpotlights(members) {
     memberIndex = 0
 
     for (i =0; i < cards.length; i++) {
-        cards[i].children[0].innerText = members[memberIndex].name;
-        cards[i].children[1].src = members[memberIndex].image_url;
-        cards[i].children[1].style.width = "auto";
-        cards[i].children[1].alt = members[memberIndex].name;
-        cards[i].children[2].innerText = members[memberIndex].slogan;
-        cards[i].children[4].href = "mailto:" + members[memberIndex].email;
-        cards[i].children[4].innerText = members[memberIndex].email;
-        cards[i].children[5].innerText = members[memberIndex].phone;
+
+        // <h3>placeholder</h3>
+        // <img src="images/placeholder.png" alt="placeholder" width="75" height="75">
+        // <p class="italic">placeholder</p>
+        // <hr>
+        // <a>placeholder</a>
+        // <p>placeholder</p>
+
+        let memberName = document.createElement('h3');
+        let memberLogo = document.createElement('img');
+        let memberSlogan = document.createElement('p');
+        let memberHr = document.createElement('hr');
+        let memberEmail = document.createElement('a');
+        let memberPhone = document.createElement('p');
+
+        memberName.innerText = members[memberIndex].name;
+        memberLogo.src = members[memberIndex].image_url;
+        let ratio = members[memberIndex].image_height / members[memberIndex].image_width
+        memberLogo.style.height = "75px";
+        memberLogo.style.width =  String(ratio * 75) + "px";
+        memberLogo.alt = members[memberIndex].name;
+        memberSlogan.innerText = members[memberIndex].slogan;
+        // hr
+        memberEmail.href = "mailto:" + members[memberIndex].email;
+        memberEmail.innerText = members[memberIndex].email;
+        memberPhone.innerText = members[memberIndex].phone;
+
+        cards[i].appendChild(memberName)
+        cards[i].appendChild(memberLogo)
+        cards[i].appendChild(memberSlogan)
+        cards[i].appendChild(memberHr)
+        cards[i].appendChild(memberEmail)
+        cards[i].appendChild(memberPhone)
+
         memberIndex ++;
     }
     

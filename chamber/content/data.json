@@ -9,6 +9,8 @@
       { "name": "business_type", "type": "string" },
       { "name": "url", "type": "string" },
       { "name": "image_url", "type": "string" },
+      { "name": "image_height", "type": "integer" },
+      { "name": "image_width", "type": "integer" },
       { "name": "slogan", "type": "string" },
       { "name": "membership_level", "type": "string" }
     ],
@@ -25,6 +27,8 @@
       "business_type": "RESTAURANT",
       "url": "http://www.tacotimenw.com/",
       "image_url": "images/members/tacotimenw_250.webp",
+      "image_height": 250,
+      "image_width": 250,
       "slogan": "",
       "membership_level": "bronze"
     },
@@ -37,6 +41,8 @@
       "business_type": "RESTAURANT",
       "url": "https://locations.modpizza.com/usa/wa/redmond/8900-161st-ave-ne",
       "image_url": "images/members/modpizza_250.webp",
+      "image_height": 250,
+      "image_width": 250,
       "slogan": "",
       "membership_level": "silver"
     },
@@ -49,6 +55,8 @@
       "business_type": "SHIPPING AND MAILING SERVICE",
       "url": "https://local.fedex.com/en-us/wa/redmond/office-5152",
       "image_url": "images/members/fedex_250.png",
+      "image_height": 250,
+      "image_width": 146,
       "slogan": "We get it there",
       "membership_level": "silver"
     },
@@ -61,6 +69,8 @@
       "business_type": "PRESCHOOL",
       "url": "https://www.kindercare.com/our-centers/redmond/wa/301240",
       "image_url": "images/members/kindercare_250.webp",
+      "image_height": 250,
+      "image_width": 250,
       "slogan": "",
       "membership_level": "silver"
     },
@@ -73,6 +83,8 @@
       "business_type": "CELL PHONE STORE",
       "url": "https://www.att.com/stores/washington/redmond/674?source=E-lls10000000000X",
       "image_url": "images/members/att_250.webp",
+      "image_height": 250,
+      "image_width": 140,
       "slogan": "",
       "membership_level": "silver"
     },
@@ -85,6 +97,8 @@
       "business_type": "RETAIL",
       "url": "https://www.fredmeyer.com/stores/grocery/wa/redmond/redmond/701/00664",
       "image_url": "images/members/fredmeyer_250.jpg",
+      "image_height": 250,
+      "image_width": 125,
       "slogan": "Fresh for Everyone",
       "membership_level": "gold"
     },
@@ -97,6 +111,8 @@
       "business_type": "PHARMACY",
       "url": "https://www.riteaid.com/locations/wa/redmond/17220-redmond-way-northeast.html",
       "image_url": "images/members/riteaid_250.jpg",
+      "image_height": 250,
+      "image_width": 140,
       "slogan": "America's Drugstore",
       "membership_level": "gold"
     },
@@ -109,6 +125,8 @@
       "business_type": "NOTARY PUBLIC",
       "url": "https://notary-seattle.com/",
       "image_url": "images/members/mobilenotary_250.webp",
+      "image_height": 250,
+      "image_width": 250,
       "slogan": "",
       "membership_level": "bronze"
     },
@@ -121,6 +139,8 @@
       "business_type": "HOTEL",
       "url": "https://www.marriott.com/en-us/hotels/seaad-aloft-seattle-redmond/overview/",
       "image_url": "images/members/aloft.webp",
+      "image_height": 250,
+      "image_width": 250,
       "slogan": "",
       "membership_level": "bronze"
     },
@@ -133,6 +153,8 @@
       "business_type": "IMMIGRATION ATTORNEY",
       "url": "https://www.orbitlawpllc.com/",
       "image_url": "images/members/orbitlaw.webp",
+      "image_height": 250,
+      "image_width": 250,
       "slogan": "",
       "membership_level": "silver"
     },
@@ -145,6 +167,8 @@
       "business_type": "HOTEL",
       "url": " https://www.marriott.com/en-us/hotels/seamc-seattle-marriott-redmond/overview",
       "image_url": "images/members/marriott.webp",
+      "image_height": 250,
+      "image_width": 250,
       "slogan": "Travel brilliantly.",
       "membership_level": "gold"
     }
