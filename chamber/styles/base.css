@@ -195,6 +195,14 @@ header nav ul {
   margin-left: 0;
 }
 
+footer a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px;
+  font-weight: 400;
+  font-size: medium;
+  color: var(--nav-hover-link-color);
+}
+
 header nav ul li a {
   display: block;
   width: 100%;
