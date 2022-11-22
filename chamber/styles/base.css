@@ -867,3 +867,7 @@ div.credit {
   margin: 5px;
   width: 100%;
 }
+
+.italic {
+  font-style: italic;
+}
