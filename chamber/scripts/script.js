@@ -116,13 +116,11 @@ if (URL == 'directory.html') {
     display = document.getElementById("member-data")
 
     gridButton.addEventListener("click", () => {
-        // example using arrow function
         display.classList.add("member-grid");
         display.classList.remove("member-list");
     });
 
     listButton.addEventListener("click", () => {
-        // example using arrow function
         display.classList.remove("member-grid");
         display.classList.add("member-list");
     });

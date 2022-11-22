@@ -316,6 +316,8 @@ img {
 .spotlight-div img {
   box-shadow: 0 0 30px #777;
   border: 2px solid #333;
+  padding: 0 10px;
+  background-color: white;
 }
 
 div.main-div p {
@@ -782,6 +784,8 @@ section.member-detail-grid img {
   max-width: 325px;
   border: 2px solid #333;
   margin-bottom: 0;
+  padding: 0 10px;
+  background-color: white;
 }
 
 section.member-detail-grid p {
