@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bountiful Foods">
+    <meta name="theme-color" content="orange">
+    <meta name="name" content="Bountiful Foods">
+
+    <meta name="application-name" content="Bountiful-Foods">
+    <link rel="icon" sizes="128x128" href="images/">
+    <link rel="icon" sizes="512x512" href="images/">
+    <link rel="apple-touch-icon" href="images/">
+
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/load-fruit-data.js" defer></script>
+
+
+    <title>Bountiful Foods Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <a class="header-link" href="./index.html">
+                <img src="images/bountiful-foods-logo.png" class="logo header" src="" width="76" height="50"
+                    alt="Bountiful Foods">
+            </a>
+        </div>
+        <div class="brand-name">
+            <h1 class="brand-first-line">
+                <span class="first-line">
+                    Bountiful Foods
+                </span>
+                <span class="subtitle">
+                    Fresh for Everyone!
+                </span>
+            </h1>
+        </div>
+        <div class="header-logo right-logo">
+            <a class="header-link" href="./index.html">
+                <img src="images/bountiful-foods-logo.png" class="logo header" src="" width="76" height="50"
+                    alt="Bountiful Foods">
+            </a>
+        </div>
+
+        <button class="menu-btn" id="ham-btn"><span>&#9776;</span><span>X</span></button>
+        <p class="date" id="date"></p>
+        <div class="header-social">
+            <a href="https://www.twitter.com"><img class="social header" src="images/twitter.png" width="42" height="42"
+                    alt="twitter"></a>
+            <a href="https://www.instagram.com"><img class="social header" src="images/instagram.png" width="42"
+                    height="42" alt="instagram"></a>
+            <a href="https://www.facebook.com"><img class="social header" src="images/facebook.png" width="42"
+                    height="42" alt="facebook"></a>
+        </div>
+        <nav class="navigation">
+            <ul class="main-nav closed" id="main_nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture class="hero-image-container">
+                <source srcset="" media="(min-width:748px) and (max-width:1199px)">
+                <source srcset="" media="(min-width:1200px)">
+                <img src="images/fruits/drinks_2.jpg" class="hero-img" width="400" height="225"
+                    alt="image of fruit drinks">
+            </picture>
+        </div>
+        <div class="fresh-grid">
+            <div class="sidebar-pictures sidebar-medium-view">
+                <img class="sidebar-picture" src="images/fruits/lime.jpg" width="100" height="100" alt="lime image">
+                <img class="sidebar-picture" src="images/fruits/lemon.jpg" width="100" height="100" alt="lemon image">
+                <img class="sidebar-picture" src="images/fruits/mango.jpg" width="100" height="100" alt="mango image">
+                <img class="sidebar-picture" src="images/fruits/peach.jpg" width="100" height="100" alt="peach image">
+                <img class="sidebar-picture" src="images/fruits/pineapple.jpg" width="100" height="100" alt="pineapple image">
+                <img class="sidebar-picture" src="images/fruits/raspberry.jpg" width="100" height="100" alt="raspberry image">
+            </div>
+            <form class="form drink-order-form" onsubmit="return false;">
+                <fieldset>
+                    <legend>Drink Designer</legend>
+                    <label class="top">Name* <input type="text" id="user-name" name="user-name" required ></label>
+                    <label class="top">Email*
+                        <input type="email" id="email" name="email" placeholder="someone@gmail.com" required ></label>
+                    <label class="top">Cell phone number*
+                        <input type="tel" id = "cell-phone" name="cell-phone" placeholder="1235551234" required ></label>
+                
+                    <label class="top">Select a fruit*
+                        <select name="Fruit-1" id="fruit-1" required>
+                            <option value="">--choose a fruit--</option>
+                        </select>
+                    </label>
+                    <label class="top">Select a fruit
+                        <select name="Fruit-2" id="fruit-2">
+                            <option value="">--choose a fruit--</option>
+                        </select>
+                    </label>
+                    <label class="top">Select a fruit
+                        <select name="Fruit-3" id="fruit-3">
+                            <option value="">--choose a fruit--</option>
+                        </select>
+                    </label>
+                    <label class="top">Special Instructions
+                        <textarea name="special-instructions" id = "special-instructions" rows="3" cols="23"></textarea>
+                    </label>
+                    <button id="get-drink-info-button" class="submit-btn">Get Drink Info</button>
+                </fieldset>
+
+                <input type="text" id="drink-date" name="drink-date" hidden >
+            </form>
+
+            <div class="sidebar-pictures sidebar-medium-view">
+                <img class="sidebar-picture" src="images/fruits/apple.jpg" width="100" height="100" alt="apple image">
+                <img class="sidebar-picture" src="images/fruits/apricot.jpg" width="100" height="100" alt="apricot image">
+                <img class="sidebar-picture" src="images/fruits/banana.jpg" width="100" height="100" alt="banana image">
+                <img class="sidebar-picture" src="images/fruits/blood_orange.jpg" width="100" height="100" alt="blood orange image">
+                <img class="sidebar-picture" src="images/fruits/cherry.jpg" width="100" height="100" alt="cherry image">
+                <img class="sidebar-picture" src="images/fruits/orange.jpg" width="100" height="100" alt="orange image">
+            </div>
+            <div class="drink-list-div center margin20 scrollable">
+                <table class="drink-list" id="drink-list-table-id" >
+
+                </table>
+            </div>
+            <div class="center margin20 drink-nutrition" >
+                <table class="drink-nutrition-table" id="drink-nutrition-table-id">
+                    <tr>
+                        <td><h2>Name</h2></td>
+                        <td id="drink-user-name-cell-id"><p></p></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Email</h2></td>
+                        <td id="drink-user-email-cell-id"></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Phone</h2></td>
+                        <td id="drink-user-phone-cell-id"></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Fruits</h2></td>
+                        <td id="drink-fruit-names-cell-id"></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Carbs</h2></td>
+                        <td id="drink-carbs-cell-id"></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Protein</h2></td>
+                        <td id="drink-protein-cell-id"></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Fat</h2></td>
+                        <td id="drink-fat-cell-id"></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Sugar</h2></td>
+                        <td id="drink-sugar-cell-id"></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Calories</h2></td>
+                        <td id="drink-calories-cell-id"></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Grams</h2></td>
+                        <td id="drink-grams-cell-id"></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Instructions</td></h2></td>
+                        <td id="drink-special-instructions-cell-id"></td>
+                    </tr>
+
+                </table>
+
+            </div>
+            <div id="drink-qr-outer-div" class="center margin20 drink-qr-outer-div" >
+
+            </div>
+
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-address">
+            <div class="footer-logo">
+                <img class="footer-logo" src="images/bountiful-foods-logo.png" alt="Bountiful Foods logo" width="76" height="50">
+            </div>
+            <div class="address">
+                <h2 class="footer-first-line"><span class="first-line">Bountiful Foods</span>
+                    <span class="footer-subtitle">Fresh for Everyone!</span>
+                </h2>
+                <p class="p-tight">1 Main St</p>
+                <p class="p-tight">Carlsbad, CA 92008</p>
+            </div>
+        </div>
+        <div class="footer-contact-info">
+            <p><a href="mailto:info@bountiful-foods.com">info@bountiful-foods.com</a></p>
+            <p><a href="tel:2535551212">(253)555-1212</a></p>
+            <a class="map-link"
+                href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1603788,-117.3489614,19.25z">📍Find us!</a>
+        </div>
+        <div class="footer-logo large-view">
+            <img class="footer-logo" src="images/bountiful-foods-logo.png" alt="Bountiful Foods logo" width="76" height="50">
+        </div>
+        <hr>
+        <div class="footer-footer">
+            <div class="footer-footer-top-row">
+                <p>©<span id="year"></span> Bountiful Foods</p>
+                <p><span class="vertical-bar">|</span></p>
+                <p><b>Adam Ulrich</b>
+                <p><span class="vertical-bar">|</span></p>
+                <p>WDD230 Final Project</p>
+                <p><span class="vertical-bar">|</span></p>
+            </div>
+            <div class="footer-footer-bottom-row">
+                <p>
+                    Last Updated: <span id="timestamp"></span>
+                </p>
+            </div>
+        </div>
+        <div class="credit">
+            <p>
+                Weather Data from OpenWeatherMap.com
+            </p>
+            <p>
+                Nutritional Information from FruityVice.com
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

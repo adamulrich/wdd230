@@ -1,0 +1,237 @@
+/* if you are using any Google fonts change the font names below to your fonts.
+Any spaces in your font name should be replaced with a +.
+Fonts are separated by a | */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+:root {
+  --primary-color: #ff8b00;
+  --secondary-color: #27a221;
+  --accent1-color: #FFD56B;
+  --accent2-color: #fff;
+  --accent3-color: #194A17;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Montserrat";
+  --paragraph-font: "Lato";
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #075803; /* headlines on a white background */
+  --headline-color-on-color: #2a8425; /* headlines on a colored background */
+  --paragraph-color-on-white: #1A4C1A; /* paragraph text on a white background */
+  --paragraph-color-on-color: #1b1a1a; /* paragraph text on a colored background */
+  --paragraph-background-color: #FFD56B;
+  --nav-link-color: white;
+  --nav-background-color: #1A4C1A;
+  --nav-hover-link-color: #194A17;
+  --nav-hover-background-color: #FFD56B;
+}
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 300px;
+}
+
+img.wireframe {
+  max-width: 1000px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--paragraph-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+
+header > h1,
+header > h2 {
+  color: var(--headline-color-on-color);
+}
+
+p,
+ul,
+li {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+}
+
+p {
+  padding: 1em;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.colors th {
+  background-color: #999;
+}
+
+.colors td {
+  width: 20%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+}
+
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+.accent3 {
+  background-color: var(--accent3-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+nav {
+  list-style-type: none;
+  display: flex;
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+nav a {
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.requirements {
+  text-align: left;
+  padding-left: 50px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  text-indent: -2em;
+  padding-left: 4em;
+  list-style-position: inside;
+}
+
+ul ul {
+  padding-left: 35px;
+}
+
+.sitemap {
+  display: grid;
+  justify-content: center;
+
+  /* grid-template-columns: repeat(6, 10%); */
+  grid-template:
+    ". . home home . ." 3em
+    ". . . top top ." 1.5em
+    ". left left right right ." 1.5em
+    "page2 page2 . . page3 page3" 3em;
+}
+
+.sitemap > div {
+  text-align: center;
+}
+
+.sm-home {
+  grid-area: home;
+  background-color: #ccc;
+  line-height: 3em;
+}
+
+.sm-page2 {
+  grid-area: page2;
+  background-color: #ccc;
+  line-height: 3em;
+}
+
+.sm-page3 {
+  grid-area: page3;
+  background-color: #ccc;
+  line-height: 3em;
+}
+
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+
+.sm-home,
+.sm-page2,
+.sm-page3 {
+  width: 200px;
+}
+
+div.image-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}

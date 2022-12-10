@@ -242,7 +242,8 @@ nav a:hover {
 /* main  */
 main {
   display: flex;
-  flex-direction: column;
+
+  /* flex-flow: row wrap; */
   width: 100%;
   min-width: 280px;
 }

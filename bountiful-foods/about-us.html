@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bountiful Foods">
+    <meta name="theme-color" content="orange">
+    <meta name="name" content="Bountiful Foods">
+
+    <meta name="application-name" content="Bountiful-Foods">
+    <link rel="icon" sizes="128x128" href="images/">
+    <link rel="icon" sizes="512x512" href="images/">
+    <link rel="apple-touch-icon" href="images/">
+
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="scripts/script.js" defer></script>
+
+    <title>Bountiful Foods Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <a class="header-link" href="./index.html">
+                <img src="images/bountiful-foods-logo.png" class="logo header" src="" width="76" height="50"
+                    alt="Bountiful Foods">
+            </a>
+        </div>
+        <div class="brand-name">
+            <h1 class="brand-first-line">
+                <span class="first-line">
+                    Bountiful Foods
+                </span>
+                <span class="subtitle">
+                    Fresh for Everyone!
+                </span>
+            </h1>
+        </div>
+        <div class="header-logo right-logo">
+            <a class="header-link" href="./index.html">
+                <img src="images/bountiful-foods-logo.png" class="logo header" src="" width="76" height="50"
+                    alt="Bountiful Foods">
+            </a>
+        </div>
+
+        <button class="menu-btn" id="ham-btn"><span>&#9776;</span><span>X</span></button>
+        <p class="date" id="date"></p>
+        <div class="header-social">
+            <a href="https://www.twitter.com"><img class="social header" src="images/twitter.png" width="42" height="42"
+                    alt="twitter"></a>
+            <a href="https://www.instagram.com"><img class="social header" src="images/instagram.png" width="42"
+                    height="42" alt="instagram"></a>
+            <a href="https://www.facebook.com"><img class="social header" src="images/facebook.png" width="42"
+                    height="42" alt="facebook"></a>
+        </div>
+        <nav class="navigation">
+            <ul class="main-nav closed" id="main_nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture class="hero-image-container">
+                <source srcset="" media="(min-width:748px) and (max-width:1199px)">
+                <source srcset="" media="(min-width:1200px)">
+                <img src="images/fruits/fruit_background_20.jpg" class="hero-img" width="400" height="225"
+                    alt="image of fruit">
+            </picture>
+    </main>
+    <footer>
+        <div class="footer-address">
+            <div class="footer-logo">
+                <img class="footer-logo" src="images/bountiful-foods-logo.png" alt="Bountiful Foods logo" width="76" height="50">
+            </div>
+            <div class="address">
+                <h2 class="footer-first-line"><span class="first-line">Bountiful Foods</span>
+                    <span class="footer-subtitle">Fresh for Everyone!</span>
+                </h2>
+                <p class="p-tight">1 Main St</p>
+                <p class="p-tight">Carlsbad, CA 92008</p>
+            </div>
+        </div>
+        <div class="footer-contact-info">
+            <p><a href="mailto:info@bountiful-foods.com">info@bountiful-foods.com</a></p>
+            <p><a href="tel:2535551212">(253)555-1212</a></p>
+            <a class="map-link"
+                href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1603788,-117.3489614,19.25z">📍Find us!</a>
+        </div>
+        <div class="footer-logo large-view">
+            <img class="footer-logo" src="images/bountiful-foods-logo.png" alt="Bountiful Foods logo" width="76" height="50">
+        </div>
+        <hr>
+        <div class="footer-footer">
+            <div class="footer-footer-top-row">
+                <p>©<span id="year"></span> Bountiful Foods</p>
+                <p><span class="vertical-bar">|</span></p>
+                <p><b>Adam Ulrich</b>
+                <p><span class="vertical-bar">|</span></p>
+                <p>WDD230 Final Project</p>
+                <p><span class="vertical-bar">|</span></p>
+            </div>
+            <div class="footer-footer-bottom-row">
+                <p>
+                    Last Updated: <span id="timestamp"></span>
+                </p>
+            </div>
+        </div>
+        <div class="credit">
+            <p>
+                Weather Data from OpenWeatherMap.com
+            </p>
+            <p>
+                Nutritional Information from FruityVice.com
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
