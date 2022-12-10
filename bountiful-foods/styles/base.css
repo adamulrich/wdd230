@@ -575,20 +575,22 @@ button.submit-btn:hover {
 
 table tr td h2,
 table tr td p {
-  margin: 2px;
+  margin: 2px 0;
+  font-size: small;
 }
 
+table.drink-list,
 table.drink-nutrition-table {
   width: 320px;
 }
 
 table.drink-nutrition-table tr td:nth-child(1) {
-  width: 90px;
+  width: 80px;
 }
 
 table.drink-nutrition-table tr td:nth-child(2) {
-  width: 150px;
-  max-width: 150px;
+  width: 190px;
+  max-width: 190px;
   overflow-wrap: anywhere;
 
   /* word-break: break-all; */

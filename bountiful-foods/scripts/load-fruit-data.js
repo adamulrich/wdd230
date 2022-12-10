@@ -120,9 +120,10 @@ function CalculateDrink() {
         
         //bring nutrition table into view
         
+        if (screen.width < 640) {
         drinkTable.lastChild.scrollIntoView({block: "start"});
         drinkNutritionTable.scrollIntoView({behavior: "smooth", block: "nearest"});
-
+        }
         //select the last row in the drink table.
         drinkTable.lastChild.click();
     }
@@ -203,7 +204,9 @@ function loadNutritionData(value) {
     //get the current drink
     let drinkList = JSON.parse(localStorage.drinkList);
     const drink = drinkList[value - 1]
-    drinkNutritionTable.scrollIntoView({behavior: "smooth", block: "nearest"});
+    if (screen.width < 640) {
+        drinkNutritionTable.scrollIntoView({behavior: "smooth", block: "nearest"});
+    }
 
     //walk the current drink selection, add data to the table.
     document.getElementById("drink-user-name-cell-id").innerHTML = "<p>" + drink[userName] + "</p>";
