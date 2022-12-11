@@ -609,7 +609,6 @@ table tr td p {
 
 table.drink-nutrition-table tr td:nth-child(1) {
   width: 80px;
-  text-align: ri;
 }
 
 table.drink-nutrition-table tr td:nth-child(2) {
