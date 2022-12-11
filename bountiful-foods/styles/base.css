@@ -579,9 +579,15 @@ table tr td p {
   font-size: small;
 }
 
+div.drink-list-div,
+div.drink-qr-outer-div,
+div.drink-nutrition {
+  width: 260px;
+}
+
 table.drink-list,
 table.drink-nutrition-table {
-  width: 320px;
+  width: 260px;
 }
 
 table.drink-nutrition-table tr td:nth-child(1) {
@@ -602,6 +608,14 @@ table.drink-nutrition-table tr td:nth-child(2) {
 } */
 
 div.drink-qr-outer-div img {
+  display: block;
+}
+
+div.drink-qr-outer-div {
+  display: none;
+}
+
+div.drink-qr-outer-div.has-qr {
   display: block;
 }
 

@@ -208,6 +208,8 @@ function loadNutritionData(value) {
         drinkNutritionTable.scrollIntoView({behavior: "smooth", block: "nearest"});
     }
 
+    drinkDate = new Date(parseInt(drink[date])).toDateString();
+
     //walk the current drink selection, add data to the table.
     document.getElementById("drink-user-name-cell-id").innerHTML = "<p>" + drink[userName] + "</p>";
     document.getElementById("drink-user-email-cell-id").innerHTML = "<p>" + drink[email] + "</p>";
@@ -220,6 +222,7 @@ function loadNutritionData(value) {
     document.getElementById("drink-sugar-cell-id").innerHTML = "<p>" + drink[sugar] + "</p>";
     document.getElementById("drink-calories-cell-id").innerHTML = "<p>" + drink[calories] + "</p>";
     document.getElementById("drink-grams-cell-id").innerHTML = "<p>" + drink[grams] +"<p>";
+    document.getElementById("drink-date-cell-id").innerHTML = "<p>" + drinkDate +"<p>";
 
     //clear the data from the fruit selections
     // fruit1.selectedIndex = 0;
@@ -255,6 +258,7 @@ function createQR(value) {
         qrSrc.height = "150";
         qrSrc.width = "150";
         qrSrc.classList.add("center");
+        drinkQROuterDiv.classList.add("has-qr")
         drinkQROuterDiv.appendChild(qrSrc);
         drinkQROuterDiv.appendChild(qrHeader);
     }
