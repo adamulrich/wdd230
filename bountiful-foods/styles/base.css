@@ -192,7 +192,8 @@ div.home-page-card {
   width: 100%;
 }
 
-div.card-container {
+div.card-container,
+div.about-us-card-container {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
@@ -297,6 +298,15 @@ picture.hero-image-container {
   height: 200px;
 }
 
+.side-bar-hero,
+.side-hero-img {
+  width: 150px;
+  height: auto;
+  margin-top: 1px;
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+
 div.hero-image-container {
   width: auto;
   height: 100%;
@@ -309,6 +319,15 @@ div.hero-image-container {
     object-position: 0% 30%;
   }
 }
+
+@supports (object-fit: cover) {
+  .side-hero-img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 70% 0%;
+  }
+}
+
 
 /* hero styling */
 div.contrast-heading,
@@ -631,4 +650,9 @@ table.drink-list tr td p {
 
 .margin20 {
   padding: 20px 0;
+}
+
+iframe.map {
+  width: 95%;
+  height: 300px;
 }

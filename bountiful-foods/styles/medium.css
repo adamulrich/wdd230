@@ -205,7 +205,8 @@
     font-size: large;
   }
 
-  div.card-container {
+  div.card-container,
+  div.about-us-card-container {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }

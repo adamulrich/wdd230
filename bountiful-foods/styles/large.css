@@ -80,4 +80,13 @@
   .footer-contact-info {
     width: 40%;
   }
+
+  div.about-us-card-container {
+    display: flex;
+  }
+
+  div.home-page-card.fresh-card {
+    width: 30%;
+    height: auto;
+  }
 }
