@@ -248,7 +248,6 @@ div.about-us-card-container {
 }
 
 #ham-btn {
-  /* margin-right: -12px; */
   background-color: transparent;
   border: none;
   font-size: 2rem;
@@ -510,21 +509,6 @@ footer hr {
   padding: 10px;
 }
 
-.form fieldset {
-  margin: 0.5rem auto;
-  border: 1px solid var(--accent5-color);
-  border-radius: 10px;
-  padding: 0.5rem;
-  padding-right: 1.5rem;
-  max-width: 230px;
-}
-
-.form legend {
-  color: var(--accent5-color);
-  margin: 0 1rem;
-  padding: 0 0.5rem;
-}
-
 .form label.top,
 .form div {
   display: block;
@@ -558,7 +542,8 @@ button.submit-btn {
   color: white;
   border-radius: 1rem;
   padding: 0.75rem;
-  margin: 20px 10px;
+  margin-top: 15px;
+  margin-left: 3px;
   width: 96%;
   max-width: 20rem;
 }
@@ -596,49 +581,45 @@ button.submit-btn:hover {
   color: #fff;
 }
 
-.drink-list-div,
-.drink-nutrition-table,
-.drink-qr-outer-div {
+div.drink-nutrition-outer-div,
+div.drink-list-outer-div,
+div.drink-qr-outer-div,
+form.drink-order-form {
   border: 1px solid var(--accent5-color);
   border-radius: 10px;
-  padding: 0.5rem;
-  padding-right: 1.5rem;
-  width: 300px;
+  width: 260px;
+  margin: 1.5rem auto 0;
+  padding: 10px 0;
 }
 
-.drink-list-div {
-  margin: 1.5rem auto;
-  padding: 10px;
+div.drink-nutrition-outer-div,
+div.drink-list-outer-div {
+  justify-self: start;
+}
+
+fieldset {
+  border: none;
 }
 
 table tr td h2,
 table tr td p {
-  margin: 2px 0;
+  margin: 5px 0 0 4px;
   font-size: small;
-}
-
-div.drink-list-div,
-div.drink-qr-outer-div,
-div.drink-nutrition {
-  width: 260px;
-}
-
-table.drink-list,
-table.drink-nutrition-table {
-  width: 260px;
 }
 
 table.drink-nutrition-table tr td:nth-child(1) {
   width: 80px;
+  text-align: ri;
 }
 
 table.drink-nutrition-table tr td:nth-child(2) {
-  width: 190px;
-  max-width: 190px;
+  width: 170px;
+  max-width: 170px;
   overflow-wrap: anywhere;
 }
 
 div.drink-qr-outer-div img {
+  margin-top: 20px;
   display: block;
 }
 
@@ -666,4 +647,8 @@ table.drink-list tr td p {
 iframe.map {
   width: 95%;
   height: 300px;
+}
+
+iframe.blank-target {
+  display: none;
 }

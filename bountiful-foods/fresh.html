@@ -91,11 +91,11 @@
                 <img class="sidebar-picture" src="images/pineapple.webp" width="100" height="100" alt="pineapple image" loading="lazy" >
                 <img class="sidebar-picture" src="images/raspberry.webp" width="100" height="100" alt="raspberry image" loading="lazy" >
             </div>
-            <iframe name="empty" style="display:none;"></iframe>
-            <form id="drink-form" class="form drink-order-form" target="empty" >
-                <!-- onsubmit="return false;" -->
+            <!-- <iframe class="blank-target" name="empty"></iframe> -->
+            <form id="drink-form" class="form drink-order-form" onsubmit="return false">
+                <h2>Drink Designer</h2>
+                <hr>    
                 <fieldset>
-                    <legend>Drink Designer</legend>
                     <label class="top">Name* <input type="text" id="user-name" name="user-name" required ></label>
                     <label class="top">Email*
                         <input type="email" id="email" name="email" placeholder="someone@gmail.com" required ></label>
@@ -135,13 +135,18 @@
                 <img class="sidebar-picture" src="images/cherry.webp" width="100" height="100" alt="cherry image" loading="lazy" >
                 <img class="sidebar-picture" src="images/orange.webp" width="100" height="100" alt="orange image" loading="lazy" >
             </div>
-            <div id="drink-list-outer-div" class="drink-list-div center margin20 scrollable">
-                <table class="drink-list" id="drink-list-table-id" >
-
-                </table>
+            <div class="drink-list-outer-div center">
+                <h2>Your Drinks</h2>
+                <hr>
+                <div id="drink-list-inner-div" class="scrollable">
+                    <table class="drink-list" id="drink-list-table-id" >
+                    </table>
+                </div>
             </div>
-            <div class="center margin20 drink-nutrition" >
-                <table class="drink-nutrition-table" id="drink-nutrition-table-id">
+            <div class="drink-nutrition-outer-div" >
+                <h2>Drink Nutrition</h2>
+                <hr>
+                <table class="drink-nutrition-table center" id="drink-nutrition-table-id">
                     <tr>
                         <td><h2>Date</h2></td>
                         <td id="drink-date-cell-id"><p></p></td>

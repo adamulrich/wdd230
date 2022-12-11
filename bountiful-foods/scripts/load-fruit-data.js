@@ -2,7 +2,7 @@ const requestURL = "content/fruit.json";
 
 const drinkNutritionTable = document.getElementById("drink-nutrition-table-id");
 const drinkTable = document.getElementById("drink-list-table-id");
-const drinkTableScrollableDiv = document.getElementById("drink-list-outer-div");
+const drinkTableScrollableDiv = document.getElementById("drink-list-inner-div");
 const drinkTableSelected = document.getElementsByClassName("selected");
 const drinkQROuterDiv = document.getElementById("drink-qr-outer-div");
 const drinkForm = document.getElementById("drink-form");

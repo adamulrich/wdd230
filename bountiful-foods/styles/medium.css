@@ -47,17 +47,15 @@
   }
 
   /* fresh page */
-
   div.fresh-grid {
     grid-template-columns: 2fr 2fr;
     justify-content: space-between;
-    gap: 20px;
+    column-gap: 20px;
   }
 
   form.drink-order-form {
     grid-row: 1/3;
-    height: 100%;
-    margin: 0;
+    margin: 1.5rem 0;
     justify-self: end;
   }
 
@@ -79,7 +77,6 @@
     max-height: 350px;
     width: 100%;
     max-width: 280px;
-    margin-left: 0;
     justify-self: start;
   }
 
@@ -88,8 +85,20 @@
     max-width: 280px;
   }
 
-  fieldset {
-    height: 92.8%;
+  div.drink-list-inner-div {
+    height: 500px;
+  }
+
+  div.drink-list-outer-div {
+    margin: 1.5rem 0;
+  }
+
+  div.drink-nutrition-outer-div {
+    margin: 0 0 1.5rem;
+  }
+
+  .scrollable {
+    height: 300px;
   }
 }
 
@@ -235,7 +244,7 @@
   div.fresh-grid {
     grid-template-columns: 1fr 2fr 2fr 1fr;
     justify-content: space-between;
-    gap: 20px;
+    column-gap: 20px;
   }
 
   div.fresh-grid div.sidebar-pictures {
