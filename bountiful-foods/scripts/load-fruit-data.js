@@ -1,10 +1,10 @@
-
 const requestURL = "content/fruit.json";
 
 const drinkNutritionTable = document.getElementById("drink-nutrition-table-id");
 const drinkTable = document.getElementById("drink-list-table-id");
 const drinkTableSelected = document.getElementsByClassName("selected");
 const drinkQROuterDiv = document.getElementById("drink-qr-outer-div");
+const drinkForm = document.getElementById("drink-form");
 
 const fruit1 = document.getElementById("fruit-1");
 const fruit2 = document.getElementById("fruit-2");
@@ -52,6 +52,9 @@ function loadFruitData (fruit) {
 //wire up button event
 const calculateDrinkButton = document.getElementById("get-drink-info-button");
 calculateDrinkButton.onclick = CalculateDrink;
+
+const clearFormButton = document.getElementById("clear-form-button");
+// clearFormButton.onmouseup
 
 
 function CalculateDrink() {
@@ -115,6 +118,7 @@ function CalculateDrink() {
         }
         
         localStorage.drinkList = JSON.stringify(drinkList);
+        localStorage.numDrinks = drinkList.length;
 
         loadDrinkTable();
         
@@ -126,31 +130,21 @@ function CalculateDrink() {
         }
         //select the last row in the drink table.
         drinkTable.lastChild.click();
+        
+        //clear the form
+        // fruit1.selectedIndex = 0;
     }
 }
-
 
 function isFormValid() {
 
-    const fruitSelectionList = [fruit1,fruit2, fruit3];
 
-        let fruitSelection = false;
-        fruitSelectionList.forEach((item) => {
-
-            if (item.selectedIndex != 0) {
-                fruitSelection = true;
-            }
-        })
-
-    if ( ! fruitSelection) {
+    if (fruit1.selectedIndex != 0) {
+                return true;
+    } else {
         return false;
     }
-
-    return true;
-
 }
-
-
 
 function loadDrinkTable() {
 
@@ -224,12 +218,6 @@ function loadNutritionData(value) {
     document.getElementById("drink-grams-cell-id").innerHTML = "<p>" + drink[grams] +"<p>";
     document.getElementById("drink-date-cell-id").innerHTML = "<p>" + drinkDate +"<p>";
 
-    //clear the data from the fruit selections
-    // fruit1.selectedIndex = 0;
-    // fruit2.selectedIndex = 0;
-    // fruit3.selectedIndex = 0;
-    
-
 }
 
 function createQR(value) {
@@ -240,7 +228,6 @@ function createQR(value) {
     // clear all children
     drinkQROuterDiv.innerHTML = "";
     
-
     if (value != null) {
 
         //read current nutrition div data into a string.

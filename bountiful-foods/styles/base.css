@@ -106,7 +106,22 @@ h6 {
   text-align: center;
 }
 
+.header-style {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+  font-size: large;
+  font-weight: 900;
+  text-align: center;
+}
+
 h2 {
+  font-size: x-large;
+  text-align: center;
+}
+
+header h2,
+footer h2 {
+  font-size: medium;
   text-align: center;
 }
 
@@ -328,7 +343,6 @@ div.hero-image-container {
   }
 }
 
-
 /* hero styling */
 div.contrast-heading,
 div.hero-contrast-heading {
@@ -420,8 +434,7 @@ footer hr {
   width: 100%;
   text-align: center;
   letter-spacing: 7px;
-  font-size: 24px;
-  color: var(--headline-color-on-color);
+  color: var(--headline-color-on-white);
   margin-left: 0;
   line-height: 1em;
   margin-top: 10px;
@@ -580,7 +593,6 @@ button.submit-btn:hover {
 .drink-list-div,
 .drink-nutrition-table,
 .drink-qr-outer-div {
-  /* margin: 2rem auto; */
   border: 1px solid var(--accent5-color);
   border-radius: 10px;
   padding: 0.5rem;
@@ -618,14 +630,7 @@ table.drink-nutrition-table tr td:nth-child(2) {
   width: 190px;
   max-width: 190px;
   overflow-wrap: anywhere;
-
-  /* word-break: break-all; */
 }
-
-/* .drink-nutrition-table {
-  border: 2px solid black;
-  width: 320px;
-} */
 
 div.drink-qr-outer-div img {
   display: block;
