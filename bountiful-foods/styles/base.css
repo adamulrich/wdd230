@@ -554,7 +554,7 @@ footer hr {
 
 button.submit-btn {
   border: 2px solid #49170b;
-  background-color: var(--nav-background-color);
+  background-color: #155511;
   color: white;
   border-radius: 1rem;
   padding: 0.75rem;
