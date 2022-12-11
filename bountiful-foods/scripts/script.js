@@ -40,10 +40,6 @@ for (let i = 0; i < mainNavChildren.length; i++) {
 
 // // set drink order date on fresh page
 
-if (URL == "fresh.html") {
-    document.getElementById("drink-date").value = date.getTime();
-}
-
 if (URL == "index.html") {
 
     // initialize display elements

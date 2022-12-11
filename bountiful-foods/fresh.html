@@ -120,7 +120,8 @@
                     <label class="top">Special Instructions
                         <textarea name="special-instructions" id = "special-instructions" rows="3" cols="23"></textarea>
                     </label>
-                    <button id="get-drink-info-button" type="reset" class="submit-btn">Get Drink Info</button>
+                    <button id="get-drink-info-button" type="submit" class="submit-btn">Get Drink Info</button>
+                    <button id="drink-form-reset" type="reset" class="submit-btn reset-btn">Clear Form</button>
                 </fieldset>
 
                 <input type="text" id="drink-date" name="drink-date" hidden >
@@ -134,7 +135,7 @@
                 <img class="sidebar-picture" src="images/cherry.webp" width="100" height="100" alt="cherry image" loading="lazy" >
                 <img class="sidebar-picture" src="images/orange.webp" width="100" height="100" alt="orange image" loading="lazy" >
             </div>
-            <div class="drink-list-div center margin20 scrollable">
+            <div id="drink-list-outer-div" class="drink-list-div center margin20 scrollable">
                 <table class="drink-list" id="drink-list-table-id" >
 
                 </table>

@@ -2,9 +2,11 @@ const requestURL = "content/fruit.json";
 
 const drinkNutritionTable = document.getElementById("drink-nutrition-table-id");
 const drinkTable = document.getElementById("drink-list-table-id");
+const drinkTableScrollableDiv = document.getElementById("drink-list-outer-div");
 const drinkTableSelected = document.getElementsByClassName("selected");
 const drinkQROuterDiv = document.getElementById("drink-qr-outer-div");
 const drinkForm = document.getElementById("drink-form");
+const drinkFormReset = document.getElementById("drink-form-reset");
 
 const fruit1 = document.getElementById("fruit-1");
 const fruit2 = document.getElementById("fruit-2");
@@ -63,7 +65,7 @@ function CalculateDrink() {
 
         // carbohydrates, protein, fat, sugar, and calories , names
         const drink_selection = [];
-        drink_selection[date] = document.getElementById("drink-date").value;
+        drink_selection[date] = new Date().getTime();
         drink_selection[fruitNames] = "";
         drink_selection[carbohydrates] = 0;
         drink_selection[protein] = 0;
@@ -121,18 +123,18 @@ function CalculateDrink() {
         localStorage.numDrinks = drinkList.length;
 
         loadDrinkTable();
-        
-        //bring nutrition table into view
-        
-        if (screen.width < 640) {
-        drinkTable.lastChild.scrollIntoView({block: "start"});
-        drinkNutritionTable.scrollIntoView({behavior: "smooth", block: "nearest"});
-        }
+
         //select the last row in the drink table.
         drinkTable.lastChild.click();
+
+        // bring the latest drink into view
+        drinkTableScrollableDiv.scrollTo(0,drinkTable.scrollHeight);
+
+        //bring qr code into view
+        drinkQROuterDiv.scrollIntoView({behavior: "smooth", block: "end"});
         
         //clear the form
-        // fruit1.selectedIndex = 0;
+        // drinkFormReset.click();
     }
 }
 
@@ -198,9 +200,10 @@ function loadNutritionData(value) {
     //get the current drink
     let drinkList = JSON.parse(localStorage.drinkList);
     const drink = drinkList[value - 1]
-    if (screen.width < 640) {
-        drinkNutritionTable.scrollIntoView({behavior: "smooth", block: "nearest"});
-    }
+
+    // if (screen.width < 640) {
+    //     drinkNutritionTable.scrollIntoView({behavior: "smooth", block: "end"});
+    // }
 
     drinkDate = new Date(parseInt(drink[date])).toDateString();
 
