@@ -185,6 +185,7 @@ div.home-page-card {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-evenly;
+  box-shadow: 0 0 30px #777;
   outline: 2px solid black;
   padding: 0.75em;
   margin: 5px;
