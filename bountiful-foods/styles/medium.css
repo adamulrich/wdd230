@@ -136,6 +136,7 @@
     align-self: center;
     display: flex;
     justify-content: center;
+    margin-top: 10px;
   }
 
   .footer-logo.large-view {
